@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="/console/jquery.js"></script>
+<script src="/Mangosteen/Media.js"></script>
+
+<title>Insert title here</title>
+</head>
+<body>
+	<div id="navigation">
+		<ul>
+			<li><a href="/Mangosteen/Media.html"><strong>Media</strong></a></li>
+			<li><a href="/console/finder/">Finder</a></li>
+		</ul>
+	</div>
+
+	<div id="page">
+		<h1 class="pageheader">Media</h1>
+		<div id="content">
+			<h2>
+				<span class="reload-span"><a href="#"
+					onclick="return reloadMedia('image', 'internal');"><img
+						src="/console/refresh.png" alt="Refresh" /></a></span>Internal Images
+			</h2>
+			<div id="image-internal">Loading...</div>
+			<h2>
+				<span class="reload-span"><a href="#"
+					onclick="return reloadMedia('image', 'external');"><img
+						src="/console/refresh.png" alt="Refresh" /></a></span>External Images
+			</h2>
+			<div id="image-external">Loading...</div>
+			<h2>
+				<span class="reload-span"><a href="#"
+					onclick="return reloadMedia('audio', 'internal');"><img
+						src="/console/refresh.png" alt="Refresh" /></a></span>Internal Audio
+			</h2>
+			<div id="audio-internal">Loading...</div>
+			<h2>
+				<span class="reload-span"><a href="#"
+					onclick="return reloadMedia('audio', 'external');"><img
+						src="/console/refresh.png" alt="Refresh" /></a></span>External Audio
+			</h2>
+			<div id="audio-external">Loading...</div>
+			<h2>
+				<span class="reload-span"><a href="#"
+					onclick="return reloadMedia('video', 'internal');"><img
+						src="/console/refresh.png" alt="Refresh" /></a></span>Internal Video
+			</h2>
+			<div id="video-internal">Loading...</div>
+			<h2>
+				<span class="reload-span"><a href="#"
+					onclick="return reloadMedia('video', 'external');"><img
+						src="/console/refresh.png" alt="Refresh" /></a></span>External Video
+			</h2>
+			<div id="video-external">Loading...</div>
+			<hr />
+			<div style="text-align: center;">
+				<h2>Upload Media to Android</h2>
+				<div id="upload">
+					<form method="post" id="uploadform" enctype="multipart/form-data"
+						action="/console/browse/media/?action=upload"
+						target="upload_target">
+						<input type="file" name="fileupload" id="fileupload" /><br /> <br />
+						<input type="submit" value="Upload" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		Served up by Jetty.<br />Chuck Norris approves.
+	</div>
+	<iframe id="hidden-target" name="hidden-target"
+		style="width: 340px; height: 48px; border: 0px none; float: right; position: fixed; bottom: 2px; right: 12px; visibility: hidden;"></iframe>
+	<iframe id="upload_target" name="upload_target" src=""
+		style="width: 0; height: 0; border: 0px none; display: none;"></iframe>
+</body>
+</html>

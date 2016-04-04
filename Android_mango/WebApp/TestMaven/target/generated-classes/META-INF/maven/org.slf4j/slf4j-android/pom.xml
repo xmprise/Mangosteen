@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   ======================================================================
+   Created:     21.10.2009
+   Version:     $Id:$
+   Author:      Thorsten Möller - University of Basel Switzerland
+
+   Copyright (c) 2009, 2010 SLF4J.ORG
+
+   All rights reserved.
+
+   Permission is hereby granted, free  of charge, to any person obtaining
+   a  copy  of this  software  and  associated  documentation files  (the
+   "Software"), to  deal in  the Software without  restriction, including
+   without limitation  the rights to  use, copy, modify,  merge, publish,
+   distribute,  sublicense, and/or sell  copies of  the Software,  and to
+   permit persons to whom the Software  is furnished to do so, subject to
+   the following conditions:
+
+   The  above  copyright  notice  and  this permission  notice  shall  be
+   included in all copies or substantial portions of the Software.
+
+   THE  SOFTWARE IS  PROVIDED  "AS  IS", WITHOUT  WARRANTY  OF ANY  KIND,
+   EXPRESS OR  IMPLIED, INCLUDING  BUT NOT LIMITED  TO THE  WARRANTIES OF
+   MERCHANTABILITY,    FITNESS    FOR    A   PARTICULAR    PURPOSE    AND
+   NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+   LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+   OF CONTRACT, TORT OR OTHERWISE,  ARISING FROM, OUT OF OR IN CONNECTION
+   WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+   ======================================================================
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+<!-- We cannot inherit from root SLF4J since we would inherit JUnit dependency,
+     but Google Android (android.jar) ships with a tailored JUnit version which
+     we need to use. (Maven has no means to exclude dependency derived from parent.) -->
+<!--	<parent>-->
+<!--		<groupId>org.slf4j</groupId>-->
+<!--		<artifactId>slf4j-parent</artifactId>-->
+<!--		<version>1.5.8</version>-->
+<!--	</parent>-->
+
+<!-- Yet another general note: This project doesn't use the Android Maven Plugin
+     on purpose. The reason is that this project is a library (to be used by
+     Android applications) but it is not an Android application itself. That's
+     why we stick to packaging type 'jar' (instead of 'apk'). Except for the
+     dependency to the Android JAR it remains a standard Java project. Note that
+     we also use standard JUnit dependency rather than the classes packaged in
+     the Android JAR. -->
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.slf4j</groupId>
+	<artifactId>slf4j-android</artifactId>
+	<version>1.6.1-RC1</version>
+	<packaging>jar</packaging>
+	<name>SLF4J API and Google Android Binding</name>
+
+	<inceptionYear>2009</inceptionYear>
+	<url>http://www.slf4j.org/android</url>
+	<description>SLF4J API and Google Android binding</description>
+
+	<properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+	<licenses>
+		<license>
+			<name>The MIT License</name>
+			<url>http://www.opensource.org/licenses/mit-license.php</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<organization>
+		<name>SLF4J.org</name>
+		<url>http://www.slf4j.org</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<id>thorsten</id>
+			<name>Thorsten Möller</name>
+			<url>http://dbis.cs.unibas.ch/team/thorsten-moeller/dbis_staff_view</url>
+			<organization>Database &amp; Information Systems Group - University Of Basel - Switzerland</organization>
+			<organizationUrl>http://dbis.cs.unibas.ch/</organizationUrl>
+		</developer>
+	</developers>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.google.android</groupId>
+			<artifactId>android</artifactId>
+			<version>1.5_r4</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<!-- Google Android requires class compatibility set to 5.0. -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.1.2</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>jar-no-fork</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<executions>
+					<execution>
+						<goals>
+							<goal>manifest</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<instructions>
+						<Export-Package>org.slf4j,org.slf4j.spi,org.slf4j.helpers</Export-Package>
+						<Private-Package>org.slf4j.impl</Private-Package>
+						<RequiredExecutionEnvironment>J2SE-1.5</RequiredExecutionEnvironment>
+					</instructions>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<addClasspath>false</addClasspath>
+							<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+						</manifest>
+						<manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

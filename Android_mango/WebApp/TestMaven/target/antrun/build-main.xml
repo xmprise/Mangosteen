@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <mkdir dir="C:\Android_mango\WebApp\TestMaven\target/TestMaven-0.0.1-SNAPSHOT/WEB-INF/lib"/>
+  <jar update="true" basedir="C:\Android_mango\WebApp\TestMaven\target" includes="classes.dex" destfile="C:\Android_mango\WebApp\TestMaven\target/TestMaven-0.0.1-SNAPSHOT/WEB-INF/lib/classes.zip"/>
+</target>
+</project>

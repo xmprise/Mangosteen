@@ -1,0 +1,34 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: 1.6.0_21 (Sun Microsystems Inc.)
+Built-By: jwiedman
+Build-Jdk: 1.6.0_21
+Implementation-Title: Commons FileUpload
+Implementation-Vendor: The Apache Software Foundation
+Implementation-Vendor-Id: org.apache
+Implementation-Version: 1.2.2
+Specification-Title: Commons FileUpload
+Specification-Vendor: The Apache Software Foundation
+Specification-Version: 1.2.2
+X-Compile-Source-JDK: 1.3
+X-Compile-Target-JDK: 1.3
+Export-Package: org.apache.commons.fileupload.util;version="1.2.2",org
+ .apache.commons.fileupload.disk;version="1.2.2",org.apache.commons.fi
+ leupload;version="1.2.2",org.apache.commons.fileupload.servlet;versio
+ n="1.2.2",org.apache.commons.fileupload.portlet;version="1.2.2"
+Tool: Bnd-0.0.255
+Bundle-Name: Commons FileUpload
+DynamicImport-Package: javax.portlet
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 1.2.2
+Bnd-LastModified: 1279143778218
+Bundle-ManifestVersion: 2
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-Description: The FileUpload component provides a simple yet fle
+ xible means of adding support for multipart    file upload functional
+ ity to servlets and web applications.
+Import-Package: javax.servlet,javax.servlet.http,org.apache.commons.io
+ ,org.apache.commons.io.output
+Bundle-SymbolicName: org.apache.commons.fileupload
+Bundle-DocURL: http://commons.apache.org/fileupload/
+

@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ToggleButton
+        android:id="@+id/toggleStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:minHeight="90dip"
+        android:minWidth="120dip"
+        android:text="ToggleButton" />
+
+    <TextView
+        android:id="@+id/stateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="23dp"
+        android:text="Mangosteen"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ToggleButton
+        android:id="@+id/Mjpec_Mod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/toggleStart"
+        android:layout_alignRight="@+id/toggleStart"
+        android:layout_below="@+id/toggleStart"
+        android:layout_marginTop="20dp"
+        android:text="ToggleButton" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/stateView"
+        android:layout_below="@+id/stateView"
+        android:layout_marginTop="15dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/nat_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/status"
+        android:layout_below="@+id/status"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

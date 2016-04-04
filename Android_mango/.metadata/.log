@@ -1,0 +1,2357 @@
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-10-30 01:19:46.883
+!MESSAGE 
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/mangosteen_test/res' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:266)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:249)
+	at com.android.ide.eclipse.adt.internal.sdk.Sdk$6.run(Sdk.java:1307)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2012-10-30 01:19:46.883
+!MESSAGE Resource '/mangosteen_test/res' does not exist.
+
+!ENTRY org.eclipse.core.resources 4 568 2012-10-30 01:19:48.094
+!MESSAGE Could not write metadata for '/AndWeb2'.
+!STACK 0
+java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.projects\AndWeb2\.markers.snap (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1685)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1768)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1167)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1109)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jface.text 4 0 2012-10-30 01:24:20.146
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.jdt.ui\jdt-images\6.png (지정된 경로를 찾을 수 없습니다))
+	at org.eclipse.swt.SWT.error(SWT.java:4361)
+	at org.eclipse.swt.SWT.error(SWT.java:4276)
+	at org.eclipse.swt.graphics.ImageLoader.save(ImageLoader.java:258)
+	at org.eclipse.jdt.internal.ui.viewsupport.ImagesOnFileSystemRegistry.getImageURL(ImagesOnFileSystemRegistry.java:104)
+	at org.eclipse.jdt.internal.ui.viewsupport.ImagesOnFileSystemRegistry.getImageURL(ImagesOnFileSystemRegistry.java:85)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getInfoText(JavadocHover.java:702)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:612)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:565)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:557)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+Caused by: java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.jdt.ui\jdt-images\6.png (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.swt.internal.Compatibility.newFileOutputStream(Compatibility.java:194)
+	at org.eclipse.swt.graphics.ImageLoader.save(ImageLoader.java:256)
+	... 10 more
+
+!ENTRY org.eclipse.jface.text 4 0 2012-10-30 01:24:37.742
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.jdt.ui\jdt-images\7.png (지정된 경로를 찾을 수 없습니다))
+	at org.eclipse.swt.SWT.error(SWT.java:4361)
+	at org.eclipse.swt.SWT.error(SWT.java:4276)
+	at org.eclipse.swt.graphics.ImageLoader.save(ImageLoader.java:258)
+	at org.eclipse.jdt.internal.ui.viewsupport.ImagesOnFileSystemRegistry.getImageURL(ImagesOnFileSystemRegistry.java:104)
+	at org.eclipse.jdt.internal.ui.viewsupport.ImagesOnFileSystemRegistry.getImageURL(ImagesOnFileSystemRegistry.java:85)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getInfoText(JavadocHover.java:702)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:612)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:565)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:557)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+Caused by: java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.jdt.ui\jdt-images\7.png (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.swt.internal.Compatibility.newFileOutputStream(Compatibility.java:194)
+	at org.eclipse.swt.graphics.ImageLoader.save(ImageLoader.java:256)
+	... 10 more
+
+!ENTRY org.eclipse.core.resources 4 568 2012-10-30 01:24:56.642
+!MESSAGE Could not write metadata for '/AndWeb2'.
+!STACK 0
+java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.projects\AndWeb2\.markers.snap (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1685)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1768)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1167)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1109)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jface.text 4 0 2012-10-30 01:37:55.898
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.jdt.ui\jdt-images\8.png (지정된 경로를 찾을 수 없습니다))
+	at org.eclipse.swt.SWT.error(SWT.java:4361)
+	at org.eclipse.swt.SWT.error(SWT.java:4276)
+	at org.eclipse.swt.graphics.ImageLoader.save(ImageLoader.java:258)
+	at org.eclipse.jdt.internal.ui.viewsupport.ImagesOnFileSystemRegistry.getImageURL(ImagesOnFileSystemRegistry.java:104)
+	at org.eclipse.jdt.internal.ui.viewsupport.ImagesOnFileSystemRegistry.getImageURL(ImagesOnFileSystemRegistry.java:85)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getInfoText(JavadocHover.java:702)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:612)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:565)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:557)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+Caused by: java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.jdt.ui\jdt-images\8.png (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.swt.internal.Compatibility.newFileOutputStream(Compatibility.java:194)
+	at org.eclipse.swt.graphics.ImageLoader.save(ImageLoader.java:256)
+	... 10 more
+
+!ENTRY org.eclipse.jface.text 4 0 2012-10-30 01:37:57.720
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.jdt.ui\jdt-images\9.png (지정된 경로를 찾을 수 없습니다))
+	at org.eclipse.swt.SWT.error(SWT.java:4361)
+	at org.eclipse.swt.SWT.error(SWT.java:4276)
+	at org.eclipse.swt.graphics.ImageLoader.save(ImageLoader.java:258)
+	at org.eclipse.jdt.internal.ui.viewsupport.ImagesOnFileSystemRegistry.getImageURL(ImagesOnFileSystemRegistry.java:104)
+	at org.eclipse.jdt.internal.ui.viewsupport.ImagesOnFileSystemRegistry.getImageURL(ImagesOnFileSystemRegistry.java:85)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getInfoText(JavadocHover.java:702)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:612)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:565)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:557)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+Caused by: java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.jdt.ui\jdt-images\9.png (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.swt.internal.Compatibility.newFileOutputStream(Compatibility.java:194)
+	at org.eclipse.swt.graphics.ImageLoader.save(ImageLoader.java:256)
+	... 10 more
+
+!ENTRY org.eclipse.jface.text 4 0 2012-10-30 01:37:58.909
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.jdt.ui\jdt-images\10.png (지정된 경로를 찾을 수 없습니다))
+	at org.eclipse.swt.SWT.error(SWT.java:4361)
+	at org.eclipse.swt.SWT.error(SWT.java:4276)
+	at org.eclipse.swt.graphics.ImageLoader.save(ImageLoader.java:258)
+	at org.eclipse.jdt.internal.ui.viewsupport.ImagesOnFileSystemRegistry.getImageURL(ImagesOnFileSystemRegistry.java:104)
+	at org.eclipse.jdt.internal.ui.viewsupport.ImagesOnFileSystemRegistry.getImageURL(ImagesOnFileSystemRegistry.java:85)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getInfoText(JavadocHover.java:702)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:612)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:565)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:557)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+Caused by: java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.jdt.ui\jdt-images\10.png (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.swt.internal.Compatibility.newFileOutputStream(Compatibility.java:194)
+	at org.eclipse.swt.graphics.ImageLoader.save(ImageLoader.java:256)
+	... 10 more
+
+!ENTRY org.eclipse.debug.ui 4 0 2012-10-30 01:45:06.580
+!MESSAGE Launch shortcut 'org.python.pydev.debug.ui.launchShortcut.ironpython' enablement expression caused exception. Shortcut was removed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property org.python.pydev.debug.ui.python_type to type class org.eclipse.jdt.internal.core.JavaProject
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:123)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:96)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:21)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.AndExpression.evaluate(AndExpression.java:29)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:150)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:72)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:53)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:287)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction.isApplicable(ContextualLaunchAction.java:295)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction.fillMenu(ContextualLaunchAction.java:218)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction$1.menuShown(ContextualLaunchAction.java:137)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:255)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:774)
+	at org.eclipse.jface.action.ActionContributionItem.copyMenu(ActionContributionItem.java:1268)
+	at org.eclipse.jface.action.ActionContributionItem.handleShowProxy(ActionContributionItem.java:1248)
+	at org.eclipse.jface.action.ActionContributionItem.access$4(ActionContributionItem.java:1237)
+	at org.eclipse.jface.action.ActionContributionItem$8.handleEvent(ActionContributionItem.java:1210)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1058)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:4881)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4557)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1627)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2069)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4976)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:257)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4210)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1029)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:923)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2012-10-30 01:45:06.582
+!MESSAGE No property tester contributes a property org.python.pydev.debug.ui.python_type to type class org.eclipse.jdt.internal.core.JavaProject
+
+!ENTRY org.eclipse.debug.ui 4 0 2012-10-30 01:45:06.583
+!MESSAGE Launch shortcut 'org.python.pydev.debug.ui.launchShortcut.ironpython.unittest' enablement expression caused exception. Shortcut was removed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property org.python.pydev.debug.ui.python_type to type class org.eclipse.jdt.internal.core.JavaProject
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:123)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:96)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:21)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.AndExpression.evaluate(AndExpression.java:29)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:150)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:72)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:53)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:287)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction.isApplicable(ContextualLaunchAction.java:295)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction.fillMenu(ContextualLaunchAction.java:218)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction$1.menuShown(ContextualLaunchAction.java:137)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:255)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:774)
+	at org.eclipse.jface.action.ActionContributionItem.copyMenu(ActionContributionItem.java:1268)
+	at org.eclipse.jface.action.ActionContributionItem.handleShowProxy(ActionContributionItem.java:1248)
+	at org.eclipse.jface.action.ActionContributionItem.access$4(ActionContributionItem.java:1237)
+	at org.eclipse.jface.action.ActionContributionItem$8.handleEvent(ActionContributionItem.java:1210)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1058)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:4881)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4557)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1627)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2069)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4976)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:257)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4210)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1029)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:923)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2012-10-30 01:45:06.584
+!MESSAGE No property tester contributes a property org.python.pydev.debug.ui.python_type to type class org.eclipse.jdt.internal.core.JavaProject
+
+!ENTRY org.eclipse.debug.ui 4 0 2012-10-30 01:45:06.585
+!MESSAGE Launch shortcut 'org.python.pydev.debug.ui.launchShortcut.jython' enablement expression caused exception. Shortcut was removed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property org.python.pydev.debug.ui.python_type to type class org.eclipse.jdt.internal.core.JavaProject
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:123)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:96)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:21)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.AndExpression.evaluate(AndExpression.java:29)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:150)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:72)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:53)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:287)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction.isApplicable(ContextualLaunchAction.java:295)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction.fillMenu(ContextualLaunchAction.java:218)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction$1.menuShown(ContextualLaunchAction.java:137)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:255)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:774)
+	at org.eclipse.jface.action.ActionContributionItem.copyMenu(ActionContributionItem.java:1268)
+	at org.eclipse.jface.action.ActionContributionItem.handleShowProxy(ActionContributionItem.java:1248)
+	at org.eclipse.jface.action.ActionContributionItem.access$4(ActionContributionItem.java:1237)
+	at org.eclipse.jface.action.ActionContributionItem$8.handleEvent(ActionContributionItem.java:1210)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1058)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:4881)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4557)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1627)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2069)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4976)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:257)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4210)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1029)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:923)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2012-10-30 01:45:06.585
+!MESSAGE No property tester contributes a property org.python.pydev.debug.ui.python_type to type class org.eclipse.jdt.internal.core.JavaProject
+
+!ENTRY org.eclipse.debug.ui 4 0 2012-10-30 01:45:06.586
+!MESSAGE Launch shortcut 'org.python.pydev.debug.ui.launchShortcut.jython.unittest' enablement expression caused exception. Shortcut was removed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property org.python.pydev.debug.ui.python_type to type class org.eclipse.jdt.internal.core.JavaProject
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:123)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:96)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:21)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.AndExpression.evaluate(AndExpression.java:29)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:150)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:72)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:53)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:287)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction.isApplicable(ContextualLaunchAction.java:295)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction.fillMenu(ContextualLaunchAction.java:218)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction$1.menuShown(ContextualLaunchAction.java:137)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:255)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:774)
+	at org.eclipse.jface.action.ActionContributionItem.copyMenu(ActionContributionItem.java:1268)
+	at org.eclipse.jface.action.ActionContributionItem.handleShowProxy(ActionContributionItem.java:1248)
+	at org.eclipse.jface.action.ActionContributionItem.access$4(ActionContributionItem.java:1237)
+	at org.eclipse.jface.action.ActionContributionItem$8.handleEvent(ActionContributionItem.java:1210)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1058)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:4881)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4557)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1627)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2069)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4976)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:257)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4210)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1029)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:923)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2012-10-30 01:45:06.586
+!MESSAGE No property tester contributes a property org.python.pydev.debug.ui.python_type to type class org.eclipse.jdt.internal.core.JavaProject
+
+!ENTRY org.eclipse.debug.ui 4 0 2012-10-30 01:45:06.588
+!MESSAGE Launch shortcut 'org.python.pydev.debug.ui.launchShortcut.python' enablement expression caused exception. Shortcut was removed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property org.python.pydev.debug.ui.python_type to type class org.eclipse.jdt.internal.core.JavaProject
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:123)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:96)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:21)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.AndExpression.evaluate(AndExpression.java:29)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:150)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:72)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:53)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:287)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction.isApplicable(ContextualLaunchAction.java:295)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction.fillMenu(ContextualLaunchAction.java:218)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction$1.menuShown(ContextualLaunchAction.java:137)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:255)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:774)
+	at org.eclipse.jface.action.ActionContributionItem.copyMenu(ActionContributionItem.java:1268)
+	at org.eclipse.jface.action.ActionContributionItem.handleShowProxy(ActionContributionItem.java:1248)
+	at org.eclipse.jface.action.ActionContributionItem.access$4(ActionContributionItem.java:1237)
+	at org.eclipse.jface.action.ActionContributionItem$8.handleEvent(ActionContributionItem.java:1210)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1058)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:4881)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4557)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1627)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2069)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4976)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:257)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4210)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1029)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:923)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2012-10-30 01:45:06.589
+!MESSAGE No property tester contributes a property org.python.pydev.debug.ui.python_type to type class org.eclipse.jdt.internal.core.JavaProject
+
+!ENTRY org.eclipse.debug.ui 4 0 2012-10-30 01:45:06.589
+!MESSAGE Launch shortcut 'org.python.pydev.debug.ui.launchShortcut.python.unittest' enablement expression caused exception. Shortcut was removed.
+!STACK 1
+org.eclipse.core.runtime.CoreException: No property tester contributes a property org.python.pydev.debug.ui.python_type to type class org.eclipse.jdt.internal.core.JavaProject
+	at org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:123)
+	at org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:96)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateOr(CompositeExpression.java:68)
+	at org.eclipse.core.internal.expressions.OrExpression.evaluate(OrExpression.java:21)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.AndExpression.evaluate(AndExpression.java:29)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.IterateExpression.evaluate(IterateExpression.java:150)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.WithExpression.evaluate(WithExpression.java:72)
+	at org.eclipse.core.internal.expressions.CompositeExpression.evaluateAnd(CompositeExpression.java:53)
+	at org.eclipse.core.internal.expressions.EnablementExpression.evaluate(EnablementExpression.java:53)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.evalEnablementExpression(LaunchShortcutExtension.java:287)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction.isApplicable(ContextualLaunchAction.java:295)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction.fillMenu(ContextualLaunchAction.java:218)
+	at org.eclipse.debug.ui.actions.ContextualLaunchAction$1.menuShown(ContextualLaunchAction.java:137)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:255)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:774)
+	at org.eclipse.jface.action.ActionContributionItem.copyMenu(ActionContributionItem.java:1268)
+	at org.eclipse.jface.action.ActionContributionItem.handleShowProxy(ActionContributionItem.java:1248)
+	at org.eclipse.jface.action.ActionContributionItem.access$4(ActionContributionItem.java:1237)
+	at org.eclipse.jface.action.ActionContributionItem$8.handleEvent(ActionContributionItem.java:1210)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1058)
+	at org.eclipse.swt.widgets.Control.WM_INITMENUPOPUP(Control.java:4881)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4557)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1627)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2069)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4976)
+	at org.eclipse.swt.internal.win32.OS.TrackPopupMenu(Native Method)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:257)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4210)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3752)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1029)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:923)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:588)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:543)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+!SUBENTRY 1 org.eclipse.core.expressions 4 201 2012-10-30 01:45:06.590
+!MESSAGE No property tester contributes a property org.python.pydev.debug.ui.python_type to type class org.eclipse.jdt.internal.core.JavaProject
+
+!ENTRY org.eclipse.core.resources 4 568 2012-10-30 01:54:03.690
+!MESSAGE Could not write metadata for '/AndWeb2'.
+!STACK 0
+java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.projects\AndWeb2\.markers.snap (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1685)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1768)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1167)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1109)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2012-10-30 01:54:11.945
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.IllegalStateException: Preference node "AndWeb2" has been removed.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.checkRemoved(EclipsePreferences.java:200)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.parent(EclipsePreferences.java:869)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.preferenceChange(LaunchConfigAffectingChangesListener.java:164)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$3.run(EclipsePreferences.java:889)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:892)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:1007)
+	at org.eclipse.core.internal.resources.ProjectPreferences.remove(ProjectPreferences.java:500)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1020)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1031)
+	at org.eclipse.core.internal.resources.ProjectPreferences.removeNode(ProjectPreferences.java:215)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:126)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:141)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.resources.Project.deleteResource(Project.java:356)
+	at org.eclipse.core.internal.resources.ResourceTree.deletedProject(ResourceTree.java:169)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:870)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1981)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2012-10-30 01:54:11.947
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.IllegalStateException: Preference node "AndWeb2" has been removed.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.checkRemoved(EclipsePreferences.java:200)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.parent(EclipsePreferences.java:869)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.preferenceChange(LaunchConfigAffectingChangesListener.java:164)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$3.run(EclipsePreferences.java:889)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:892)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:1007)
+	at org.eclipse.core.internal.resources.ProjectPreferences.remove(ProjectPreferences.java:500)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1020)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1031)
+	at org.eclipse.core.internal.resources.ProjectPreferences.removeNode(ProjectPreferences.java:215)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:126)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:141)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.resources.Project.deleteResource(Project.java:356)
+	at org.eclipse.core.internal.resources.ResourceTree.deletedProject(ResourceTree.java:169)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:870)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1981)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2012-10-30 01:54:11.948
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.IllegalStateException: Preference node "AndWeb2" has been removed.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.checkRemoved(EclipsePreferences.java:200)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.parent(EclipsePreferences.java:869)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.preferenceChange(LaunchConfigAffectingChangesListener.java:164)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$3.run(EclipsePreferences.java:889)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:892)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:1007)
+	at org.eclipse.core.internal.resources.ProjectPreferences.remove(ProjectPreferences.java:500)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1020)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1031)
+	at org.eclipse.core.internal.resources.ProjectPreferences.removeNode(ProjectPreferences.java:215)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:126)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:141)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.resources.Project.deleteResource(Project.java:356)
+	at org.eclipse.core.internal.resources.ResourceTree.deletedProject(ResourceTree.java:169)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:870)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1981)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.core.resources 4 568 2012-10-30 01:54:12.111
+!MESSAGE Could not write metadata for '/TestMaven'.
+!STACK 0
+java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.projects\TestMaven\.markers.snap (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1685)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1768)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1167)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1109)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2012-10-30 01:54:19.573
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.IllegalStateException: Preference node "TestMaven" has been removed.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.checkRemoved(EclipsePreferences.java:200)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.parent(EclipsePreferences.java:869)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.preferenceChange(LaunchConfigAffectingChangesListener.java:164)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$3.run(EclipsePreferences.java:889)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:892)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:1007)
+	at org.eclipse.core.internal.resources.ProjectPreferences.remove(ProjectPreferences.java:500)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1020)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1031)
+	at org.eclipse.core.internal.resources.ProjectPreferences.removeNode(ProjectPreferences.java:215)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:126)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:141)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.resources.Project.deleteResource(Project.java:356)
+	at org.eclipse.core.internal.resources.ResourceTree.deletedProject(ResourceTree.java:169)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:870)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1981)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2012-10-30 01:54:19.574
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.IllegalStateException: Preference node "TestMaven" has been removed.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.checkRemoved(EclipsePreferences.java:200)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.parent(EclipsePreferences.java:869)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.preferenceChange(LaunchConfigAffectingChangesListener.java:164)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$3.run(EclipsePreferences.java:889)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:892)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:1007)
+	at org.eclipse.core.internal.resources.ProjectPreferences.remove(ProjectPreferences.java:500)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1020)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1031)
+	at org.eclipse.core.internal.resources.ProjectPreferences.removeNode(ProjectPreferences.java:215)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:126)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:141)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.resources.Project.deleteResource(Project.java:356)
+	at org.eclipse.core.internal.resources.ResourceTree.deletedProject(ResourceTree.java:169)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:870)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1981)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2012-10-30 01:54:19.575
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.IllegalStateException: Preference node "TestMaven" has been removed.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.checkRemoved(EclipsePreferences.java:200)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.parent(EclipsePreferences.java:869)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.preferenceChange(LaunchConfigAffectingChangesListener.java:164)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$3.run(EclipsePreferences.java:889)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:892)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:1007)
+	at org.eclipse.core.internal.resources.ProjectPreferences.remove(ProjectPreferences.java:500)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1020)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1031)
+	at org.eclipse.core.internal.resources.ProjectPreferences.removeNode(ProjectPreferences.java:215)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:126)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:141)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.resources.Project.deleteResource(Project.java:356)
+	at org.eclipse.core.internal.resources.ResourceTree.deletedProject(ResourceTree.java:169)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:870)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1981)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2012-10-30 01:54:19.576
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.IllegalStateException: Preference node "TestMaven" has been removed.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.checkRemoved(EclipsePreferences.java:200)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.parent(EclipsePreferences.java:869)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.preferenceChange(LaunchConfigAffectingChangesListener.java:164)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$3.run(EclipsePreferences.java:889)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:892)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:1007)
+	at org.eclipse.core.internal.resources.ProjectPreferences.remove(ProjectPreferences.java:500)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1020)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1031)
+	at org.eclipse.core.internal.resources.ProjectPreferences.removeNode(ProjectPreferences.java:215)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:126)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:141)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.resources.Project.deleteResource(Project.java:356)
+	at org.eclipse.core.internal.resources.ResourceTree.deletedProject(ResourceTree.java:169)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:870)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1981)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2012-10-30 01:54:19.576
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.IllegalStateException: Preference node "TestMaven" has been removed.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.checkRemoved(EclipsePreferences.java:200)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.parent(EclipsePreferences.java:869)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.preferenceChange(LaunchConfigAffectingChangesListener.java:164)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$3.run(EclipsePreferences.java:889)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:892)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:1007)
+	at org.eclipse.core.internal.resources.ProjectPreferences.remove(ProjectPreferences.java:500)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1020)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1031)
+	at org.eclipse.core.internal.resources.ProjectPreferences.removeNode(ProjectPreferences.java:215)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:126)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:141)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.resources.Project.deleteResource(Project.java:356)
+	at org.eclipse.core.internal.resources.ResourceTree.deletedProject(ResourceTree.java:169)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:870)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1981)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2012-10-30 01:54:19.577
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.IllegalStateException: Preference node "TestMaven" has been removed.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.checkRemoved(EclipsePreferences.java:200)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.parent(EclipsePreferences.java:869)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.preferenceChange(LaunchConfigAffectingChangesListener.java:164)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$3.run(EclipsePreferences.java:889)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:892)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:1007)
+	at org.eclipse.core.internal.resources.ProjectPreferences.remove(ProjectPreferences.java:500)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1020)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1031)
+	at org.eclipse.core.internal.resources.ProjectPreferences.removeNode(ProjectPreferences.java:215)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:126)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:141)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.resources.Project.deleteResource(Project.java:356)
+	at org.eclipse.core.internal.resources.ResourceTree.deletedProject(ResourceTree.java:169)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:870)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1981)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2012-10-30 01:54:19.578
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.IllegalStateException: Preference node "TestMaven" has been removed.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.checkRemoved(EclipsePreferences.java:200)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.parent(EclipsePreferences.java:869)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.preferenceChange(LaunchConfigAffectingChangesListener.java:164)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$3.run(EclipsePreferences.java:889)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:892)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:1007)
+	at org.eclipse.core.internal.resources.ProjectPreferences.remove(ProjectPreferences.java:500)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1020)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1031)
+	at org.eclipse.core.internal.resources.ProjectPreferences.removeNode(ProjectPreferences.java:215)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:126)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:141)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.resources.Project.deleteResource(Project.java:356)
+	at org.eclipse.core.internal.resources.ResourceTree.deletedProject(ResourceTree.java:169)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:870)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1981)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2012-10-30 01:54:19.579
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.IllegalStateException: Preference node "TestMaven" has been removed.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.checkRemoved(EclipsePreferences.java:200)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.parent(EclipsePreferences.java:869)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.preferenceChange(LaunchConfigAffectingChangesListener.java:164)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$3.run(EclipsePreferences.java:889)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:892)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:1007)
+	at org.eclipse.core.internal.resources.ProjectPreferences.remove(ProjectPreferences.java:500)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1020)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1031)
+	at org.eclipse.core.internal.resources.ProjectPreferences.removeNode(ProjectPreferences.java:215)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:126)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:141)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.resources.Project.deleteResource(Project.java:356)
+	at org.eclipse.core.internal.resources.ResourceTree.deletedProject(ResourceTree.java:169)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:870)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1981)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2012-10-30 01:54:19.579
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.IllegalStateException: Preference node "TestMaven" has been removed.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.checkRemoved(EclipsePreferences.java:200)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.parent(EclipsePreferences.java:869)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.preferenceChange(LaunchConfigAffectingChangesListener.java:164)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$3.run(EclipsePreferences.java:889)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:892)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:1007)
+	at org.eclipse.core.internal.resources.ProjectPreferences.remove(ProjectPreferences.java:500)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1020)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1031)
+	at org.eclipse.core.internal.resources.ProjectPreferences.removeNode(ProjectPreferences.java:215)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:126)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:141)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.resources.Project.deleteResource(Project.java:356)
+	at org.eclipse.core.internal.resources.ResourceTree.deletedProject(ResourceTree.java:169)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:870)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1981)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2012-10-30 01:54:19.580
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.IllegalStateException: Preference node "TestMaven" has been removed.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.checkRemoved(EclipsePreferences.java:200)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.parent(EclipsePreferences.java:869)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.preferenceChange(LaunchConfigAffectingChangesListener.java:164)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$3.run(EclipsePreferences.java:889)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:892)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:1007)
+	at org.eclipse.core.internal.resources.ProjectPreferences.remove(ProjectPreferences.java:500)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1020)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1031)
+	at org.eclipse.core.internal.resources.ProjectPreferences.removeNode(ProjectPreferences.java:215)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:126)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:141)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.resources.Project.deleteResource(Project.java:356)
+	at org.eclipse.core.internal.resources.ResourceTree.deletedProject(ResourceTree.java:169)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:870)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1981)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2012-10-30 01:54:19.581
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.IllegalStateException: Preference node "TestMaven" has been removed.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.checkRemoved(EclipsePreferences.java:200)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.parent(EclipsePreferences.java:869)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.preferenceChange(LaunchConfigAffectingChangesListener.java:164)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$3.run(EclipsePreferences.java:889)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:892)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:1007)
+	at org.eclipse.core.internal.resources.ProjectPreferences.remove(ProjectPreferences.java:500)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1020)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1031)
+	at org.eclipse.core.internal.resources.ProjectPreferences.removeNode(ProjectPreferences.java:215)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:126)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:141)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.resources.Project.deleteResource(Project.java:356)
+	at org.eclipse.core.internal.resources.ResourceTree.deletedProject(ResourceTree.java:169)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:870)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1981)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.core.resources 4 568 2012-10-30 01:54:19.785
+!MESSAGE Could not write metadata for '/http_reverse'.
+!STACK 0
+java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.projects\http_reverse\.markers.snap (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1685)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1768)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1167)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1109)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-10-30 01:54:20.763
+!MESSAGE Unable to remove TestMaven/TestMaven/0.0.1-SNAPSHOT/TestMaven-0.0.1-SNAPSHOT.pom
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2012-10-30 01:54:26.284
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.IllegalStateException: Preference node "http_reverse" has been removed.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.checkRemoved(EclipsePreferences.java:200)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.parent(EclipsePreferences.java:869)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.preferenceChange(LaunchConfigAffectingChangesListener.java:164)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$3.run(EclipsePreferences.java:889)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:892)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:1007)
+	at org.eclipse.core.internal.resources.ProjectPreferences.remove(ProjectPreferences.java:500)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1020)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1031)
+	at org.eclipse.core.internal.resources.ProjectPreferences.removeNode(ProjectPreferences.java:215)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:126)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:141)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.resources.Project.deleteResource(Project.java:356)
+	at org.eclipse.core.internal.resources.ResourceTree.deletedProject(ResourceTree.java:169)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:870)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1981)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2012-10-30 01:54:26.286
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.IllegalStateException: Preference node "http_reverse" has been removed.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.checkRemoved(EclipsePreferences.java:200)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.parent(EclipsePreferences.java:869)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.preferenceChange(LaunchConfigAffectingChangesListener.java:164)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$3.run(EclipsePreferences.java:889)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:892)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:1007)
+	at org.eclipse.core.internal.resources.ProjectPreferences.remove(ProjectPreferences.java:500)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1020)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1031)
+	at org.eclipse.core.internal.resources.ProjectPreferences.removeNode(ProjectPreferences.java:215)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:126)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:141)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.resources.Project.deleteResource(Project.java:356)
+	at org.eclipse.core.internal.resources.ResourceTree.deletedProject(ResourceTree.java:169)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:870)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1981)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2012-10-30 01:54:26.287
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.IllegalStateException: Preference node "http_reverse" has been removed.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.checkRemoved(EclipsePreferences.java:200)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.parent(EclipsePreferences.java:869)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.preferenceChange(LaunchConfigAffectingChangesListener.java:164)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$3.run(EclipsePreferences.java:889)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:892)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:1007)
+	at org.eclipse.core.internal.resources.ProjectPreferences.remove(ProjectPreferences.java:500)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1020)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1031)
+	at org.eclipse.core.internal.resources.ProjectPreferences.removeNode(ProjectPreferences.java:215)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:126)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:141)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.resources.Project.deleteResource(Project.java:356)
+	at org.eclipse.core.internal.resources.ResourceTree.deletedProject(ResourceTree.java:169)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:870)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1981)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2012-10-30 01:54:26.288
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.IllegalStateException: Preference node "http_reverse" has been removed.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.checkRemoved(EclipsePreferences.java:200)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.parent(EclipsePreferences.java:869)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.preferenceChange(LaunchConfigAffectingChangesListener.java:164)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$3.run(EclipsePreferences.java:889)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:892)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:1007)
+	at org.eclipse.core.internal.resources.ProjectPreferences.remove(ProjectPreferences.java:500)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1020)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1031)
+	at org.eclipse.core.internal.resources.ProjectPreferences.removeNode(ProjectPreferences.java:215)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:126)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:141)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.resources.Project.deleteResource(Project.java:356)
+	at org.eclipse.core.internal.resources.ResourceTree.deletedProject(ResourceTree.java:169)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:870)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1981)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2012-10-30 01:54:26.289
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.IllegalStateException: Preference node "http_reverse" has been removed.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.checkRemoved(EclipsePreferences.java:200)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.parent(EclipsePreferences.java:869)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.preferenceChange(LaunchConfigAffectingChangesListener.java:164)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$3.run(EclipsePreferences.java:889)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:892)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:1007)
+	at org.eclipse.core.internal.resources.ProjectPreferences.remove(ProjectPreferences.java:500)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1020)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1031)
+	at org.eclipse.core.internal.resources.ProjectPreferences.removeNode(ProjectPreferences.java:215)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:126)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:141)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.resources.Project.deleteResource(Project.java:356)
+	at org.eclipse.core.internal.resources.ResourceTree.deletedProject(ResourceTree.java:169)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:870)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1981)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2012-10-30 01:54:26.290
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.IllegalStateException: Preference node "http_reverse" has been removed.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.checkRemoved(EclipsePreferences.java:200)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.parent(EclipsePreferences.java:869)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.preferenceChange(LaunchConfigAffectingChangesListener.java:164)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$3.run(EclipsePreferences.java:889)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:892)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:1007)
+	at org.eclipse.core.internal.resources.ProjectPreferences.remove(ProjectPreferences.java:500)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1020)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1031)
+	at org.eclipse.core.internal.resources.ProjectPreferences.removeNode(ProjectPreferences.java:215)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:126)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:141)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.resources.Project.deleteResource(Project.java:356)
+	at org.eclipse.core.internal.resources.ResourceTree.deletedProject(ResourceTree.java:169)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:870)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1981)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2012-10-30 01:54:26.291
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.IllegalStateException: Preference node "http_reverse" has been removed.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.checkRemoved(EclipsePreferences.java:200)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.parent(EclipsePreferences.java:869)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.preferenceChange(LaunchConfigAffectingChangesListener.java:164)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$3.run(EclipsePreferences.java:889)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:892)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:1007)
+	at org.eclipse.core.internal.resources.ProjectPreferences.remove(ProjectPreferences.java:500)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1020)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1031)
+	at org.eclipse.core.internal.resources.ProjectPreferences.removeNode(ProjectPreferences.java:215)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:126)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:141)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.resources.Project.deleteResource(Project.java:356)
+	at org.eclipse.core.internal.resources.ResourceTree.deletedProject(ResourceTree.java:169)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:870)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1981)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2012-10-30 01:54:26.292
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.IllegalStateException: Preference node "http_reverse" has been removed.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.checkRemoved(EclipsePreferences.java:200)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.parent(EclipsePreferences.java:869)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.preferenceChange(LaunchConfigAffectingChangesListener.java:164)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$3.run(EclipsePreferences.java:889)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:892)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:1007)
+	at org.eclipse.core.internal.resources.ProjectPreferences.remove(ProjectPreferences.java:500)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1020)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1031)
+	at org.eclipse.core.internal.resources.ProjectPreferences.removeNode(ProjectPreferences.java:215)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:126)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:141)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.resources.Project.deleteResource(Project.java:356)
+	at org.eclipse.core.internal.resources.ResourceTree.deletedProject(ResourceTree.java:169)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:870)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1981)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2012-10-30 01:54:26.293
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.IllegalStateException: Preference node "http_reverse" has been removed.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.checkRemoved(EclipsePreferences.java:200)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.parent(EclipsePreferences.java:869)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.preferenceChange(LaunchConfigAffectingChangesListener.java:164)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$3.run(EclipsePreferences.java:889)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:892)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:1007)
+	at org.eclipse.core.internal.resources.ProjectPreferences.remove(ProjectPreferences.java:500)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1020)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1031)
+	at org.eclipse.core.internal.resources.ProjectPreferences.removeNode(ProjectPreferences.java:215)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:126)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:141)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.resources.Project.deleteResource(Project.java:356)
+	at org.eclipse.core.internal.resources.ResourceTree.deletedProject(ResourceTree.java:169)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:870)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1981)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2012-10-30 01:54:26.293
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.equinox.preferences".
+!STACK 0
+java.lang.IllegalStateException: Preference node "http_reverse" has been removed.
+	at org.eclipse.core.internal.preferences.EclipsePreferences.checkRemoved(EclipsePreferences.java:200)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.parent(EclipsePreferences.java:869)
+	at com.google.gdt.eclipse.suite.launch.processors.LaunchConfigAffectingChangesListener.preferenceChange(LaunchConfigAffectingChangesListener.java:164)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$3.run(EclipsePreferences.java:889)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:892)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:1007)
+	at org.eclipse.core.internal.resources.ProjectPreferences.remove(ProjectPreferences.java:500)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1020)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.removeNode(EclipsePreferences.java:1031)
+	at org.eclipse.core.internal.resources.ProjectPreferences.removeNode(ProjectPreferences.java:215)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:126)
+	at org.eclipse.core.internal.resources.ProjectPreferences.deleted(ProjectPreferences.java:141)
+	at org.eclipse.core.internal.resources.Resource.deleteResource(Resource.java:872)
+	at org.eclipse.core.internal.resources.Project.deleteResource(Project.java:356)
+	at org.eclipse.core.internal.resources.ResourceTree.deletedProject(ResourceTree.java:169)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:870)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1981)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:160)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.core.resources 4 568 2012-10-30 01:54:26.396
+!MESSAGE Could not write metadata for '/socket.io-java-client'.
+!STACK 0
+java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.projects\socket.io-java-client\.markers.snap (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1685)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1768)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1167)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1109)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.core.resources 4 566 2012-10-30 02:00:40.328
+!MESSAGE Could not save master table to file 'C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources'.
+!STACK 0
+java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1227)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1220)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1197)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1109)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.core.resources 4 566 2012-10-30 02:08:50.494
+!MESSAGE Could not save master table to file 'C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources'.
+!STACK 0
+java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1227)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1220)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1197)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1109)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-10-30 02:11:10.198
+!MESSAGE No command output when running: 'am start -n com.mangosteen.mangosteen_test/com.mangosteen.mangosteen_test.MainActivity -a android.intent.action.MAIN -c android.intent.category.LAUNCHER' on device 12B9WQ2B0047502
+!STACK 0
+com.android.ddmlib.ShellCommandUnresponsiveException
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:408)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:453)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:75)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.doLaunchAction(AndroidLaunchController.java:1272)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launchApp(AndroidLaunchController.java:1256)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.simpleLaunch(AndroidLaunchController.java:901)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.continueLaunch(AndroidLaunchController.java:743)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launch(AndroidLaunchController.java:560)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.doLaunch(LaunchConfigDelegate.java:322)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.launch(LaunchConfigDelegate.java:238)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.core.resources 4 566 2012-10-30 02:15:22.883
+!MESSAGE Could not save master table to file 'C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources'.
+!STACK 0
+java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1227)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1220)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1197)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1109)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-10-30 02:18:47.227
+!MESSAGE No command output when running: 'am start -n com.mangosteen.mangosteen_test/com.mangosteen.mangosteen_test.MainActivity -a android.intent.action.MAIN -c android.intent.category.LAUNCHER' on device 12B9WQ2B0047502
+!STACK 0
+com.android.ddmlib.ShellCommandUnresponsiveException
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:408)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:453)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:75)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.doLaunchAction(AndroidLaunchController.java:1272)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launchApp(AndroidLaunchController.java:1256)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.simpleLaunch(AndroidLaunchController.java:901)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.continueLaunch(AndroidLaunchController.java:743)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launch(AndroidLaunchController.java:560)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.doLaunch(LaunchConfigDelegate.java:322)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.launch(LaunchConfigDelegate.java:238)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.core.resources 4 566 2012-10-30 02:21:01.395
+!MESSAGE Could not save master table to file 'C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources'.
+!STACK 0
+java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1227)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1220)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1197)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1109)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2012-10-30 02:23:39.261
+!MESSAGE No command output when running: 'am start -n com.mangosteen.mangosteen_test/com.mangosteen.mangosteen_test.MainActivity -a android.intent.action.MAIN -c android.intent.category.LAUNCHER' on device 12B9WQ2B0047502
+!STACK 0
+com.android.ddmlib.ShellCommandUnresponsiveException
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:408)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:453)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:75)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.doLaunchAction(AndroidLaunchController.java:1272)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launchApp(AndroidLaunchController.java:1256)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.simpleLaunch(AndroidLaunchController.java:901)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.continueLaunch(AndroidLaunchController.java:743)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launch(AndroidLaunchController.java:560)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.doLaunch(LaunchConfigDelegate.java:322)
+	at com.android.ide.eclipse.adt.internal.launch.LaunchConfigDelegate.launch(LaunchConfigDelegate.java:238)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:855)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:704)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1047)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1251)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.core.resources 4 566 2012-10-30 02:28:01.892
+!MESSAGE Could not save master table to file 'C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources'.
+!STACK 0
+java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1227)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1220)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1197)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1109)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.core.resources 4 566 2012-10-30 02:47:27.518
+!MESSAGE Could not save master table to file 'C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources'.
+!STACK 0
+java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1227)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1220)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1197)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1109)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.core.resources 4 566 2012-10-30 03:45:13.164
+!MESSAGE Could not save master table to file 'C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources'.
+!STACK 0
+java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1227)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1220)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1197)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1109)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jface.text 4 0 2012-10-30 03:50:39.201
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.jdt.ui\jdt-images\11.png (지정된 경로를 찾을 수 없습니다))
+	at org.eclipse.swt.SWT.error(SWT.java:4361)
+	at org.eclipse.swt.SWT.error(SWT.java:4276)
+	at org.eclipse.swt.graphics.ImageLoader.save(ImageLoader.java:258)
+	at org.eclipse.jdt.internal.ui.viewsupport.ImagesOnFileSystemRegistry.getImageURL(ImagesOnFileSystemRegistry.java:104)
+	at org.eclipse.jdt.internal.ui.viewsupport.ImagesOnFileSystemRegistry.getImageURL(ImagesOnFileSystemRegistry.java:85)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getInfoText(JavadocHover.java:702)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:655)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:565)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:557)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+Caused by: java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.jdt.ui\jdt-images\11.png (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.swt.internal.Compatibility.newFileOutputStream(Compatibility.java:194)
+	at org.eclipse.swt.graphics.ImageLoader.save(ImageLoader.java:256)
+	... 10 more
+
+!ENTRY org.eclipse.jface.text 4 0 2012-10-30 03:50:40.415
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.jdt.ui\jdt-images\12.png (지정된 경로를 찾을 수 없습니다))
+	at org.eclipse.swt.SWT.error(SWT.java:4361)
+	at org.eclipse.swt.SWT.error(SWT.java:4276)
+	at org.eclipse.swt.graphics.ImageLoader.save(ImageLoader.java:258)
+	at org.eclipse.jdt.internal.ui.viewsupport.ImagesOnFileSystemRegistry.getImageURL(ImagesOnFileSystemRegistry.java:104)
+	at org.eclipse.jdt.internal.ui.viewsupport.ImagesOnFileSystemRegistry.getImageURL(ImagesOnFileSystemRegistry.java:85)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getInfoText(JavadocHover.java:702)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:655)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:565)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:557)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+Caused by: java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.jdt.ui\jdt-images\12.png (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.swt.internal.Compatibility.newFileOutputStream(Compatibility.java:194)
+	at org.eclipse.swt.graphics.ImageLoader.save(ImageLoader.java:256)
+	... 10 more
+
+!ENTRY org.eclipse.jface.text 4 0 2012-10-30 03:50:42.102
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.jdt.ui\jdt-images\13.png (지정된 경로를 찾을 수 없습니다))
+	at org.eclipse.swt.SWT.error(SWT.java:4361)
+	at org.eclipse.swt.SWT.error(SWT.java:4276)
+	at org.eclipse.swt.graphics.ImageLoader.save(ImageLoader.java:258)
+	at org.eclipse.jdt.internal.ui.viewsupport.ImagesOnFileSystemRegistry.getImageURL(ImagesOnFileSystemRegistry.java:104)
+	at org.eclipse.jdt.internal.ui.viewsupport.ImagesOnFileSystemRegistry.getImageURL(ImagesOnFileSystemRegistry.java:85)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getInfoText(JavadocHover.java:702)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:655)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:565)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:557)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+Caused by: java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.jdt.ui\jdt-images\13.png (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.swt.internal.Compatibility.newFileOutputStream(Compatibility.java:194)
+	at org.eclipse.swt.graphics.ImageLoader.save(ImageLoader.java:256)
+	... 10 more
+
+!ENTRY org.eclipse.core.resources 4 566 2012-10-30 03:53:05.031
+!MESSAGE Could not save master table to file 'C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources'.
+!STACK 0
+java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1227)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1220)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1197)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1109)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.jface.text 4 0 2012-10-30 03:56:09.001
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.jdt.ui\jdt-images\14.png (지정된 경로를 찾을 수 없습니다))
+	at org.eclipse.swt.SWT.error(SWT.java:4361)
+	at org.eclipse.swt.SWT.error(SWT.java:4276)
+	at org.eclipse.swt.graphics.ImageLoader.save(ImageLoader.java:258)
+	at org.eclipse.jdt.internal.ui.viewsupport.ImagesOnFileSystemRegistry.getImageURL(ImagesOnFileSystemRegistry.java:104)
+	at org.eclipse.jdt.internal.ui.viewsupport.ImagesOnFileSystemRegistry.getImageURL(ImagesOnFileSystemRegistry.java:85)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getInfoText(JavadocHover.java:702)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:655)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:565)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:557)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+Caused by: java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.jdt.ui\jdt-images\14.png (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.swt.internal.Compatibility.newFileOutputStream(Compatibility.java:194)
+	at org.eclipse.swt.graphics.ImageLoader.save(ImageLoader.java:256)
+	... 10 more
+
+!ENTRY org.eclipse.jface.text 4 0 2012-10-30 03:56:10.045
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.jdt.ui\jdt-images\15.png (지정된 경로를 찾을 수 없습니다))
+	at org.eclipse.swt.SWT.error(SWT.java:4361)
+	at org.eclipse.swt.SWT.error(SWT.java:4276)
+	at org.eclipse.swt.graphics.ImageLoader.save(ImageLoader.java:258)
+	at org.eclipse.jdt.internal.ui.viewsupport.ImagesOnFileSystemRegistry.getImageURL(ImagesOnFileSystemRegistry.java:104)
+	at org.eclipse.jdt.internal.ui.viewsupport.ImagesOnFileSystemRegistry.getImageURL(ImagesOnFileSystemRegistry.java:85)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getInfoText(JavadocHover.java:702)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:655)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:565)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:557)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+Caused by: java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.jdt.ui\jdt-images\15.png (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.swt.internal.Compatibility.newFileOutputStream(Compatibility.java:194)
+	at org.eclipse.swt.graphics.ImageLoader.save(ImageLoader.java:256)
+	... 10 more
+
+!ENTRY org.eclipse.jface.text 4 0 2012-10-30 03:56:10.606
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.jdt.ui\jdt-images\16.png (지정된 경로를 찾을 수 없습니다))
+	at org.eclipse.swt.SWT.error(SWT.java:4361)
+	at org.eclipse.swt.SWT.error(SWT.java:4276)
+	at org.eclipse.swt.graphics.ImageLoader.save(ImageLoader.java:258)
+	at org.eclipse.jdt.internal.ui.viewsupport.ImagesOnFileSystemRegistry.getImageURL(ImagesOnFileSystemRegistry.java:104)
+	at org.eclipse.jdt.internal.ui.viewsupport.ImagesOnFileSystemRegistry.getImageURL(ImagesOnFileSystemRegistry.java:85)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getInfoText(JavadocHover.java:702)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:612)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:565)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:557)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+Caused by: java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.jdt.ui\jdt-images\16.png (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.swt.internal.Compatibility.newFileOutputStream(Compatibility.java:194)
+	at org.eclipse.swt.graphics.ImageLoader.save(ImageLoader.java:256)
+	... 10 more
+
+!ENTRY org.eclipse.jface.text 4 0 2012-10-30 03:57:54.541
+!MESSAGE Unexpected runtime error while computing a text hover
+!STACK 0
+org.eclipse.swt.SWTException: i/o error (java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.jdt.ui\jdt-images\17.png (지정된 경로를 찾을 수 없습니다))
+	at org.eclipse.swt.SWT.error(SWT.java:4361)
+	at org.eclipse.swt.SWT.error(SWT.java:4276)
+	at org.eclipse.swt.graphics.ImageLoader.save(ImageLoader.java:258)
+	at org.eclipse.jdt.internal.ui.viewsupport.ImagesOnFileSystemRegistry.getImageURL(ImagesOnFileSystemRegistry.java:104)
+	at org.eclipse.jdt.internal.ui.viewsupport.ImagesOnFileSystemRegistry.getImageURL(ImagesOnFileSystemRegistry.java:85)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getInfoText(JavadocHover.java:702)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:655)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:565)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:557)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+Caused by: java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.jdt.ui\jdt-images\17.png (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.swt.internal.Compatibility.newFileOutputStream(Compatibility.java:194)
+	at org.eclipse.swt.graphics.ImageLoader.save(ImageLoader.java:256)
+	... 10 more
+
+!ENTRY org.eclipse.jface 2 0 2012-10-30 03:59:47.430
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-10-30 03:59:47.430
+!MESSAGE A conflict occurred for CTRL+I:
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.indent,Correct Indentation,
+		Corrects the indentation of the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@119e9405,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.active.elements,Format Active Elements,
+		Format active elements,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@14f8e8b4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-10-30 03:59:47.430
+!MESSAGE A conflict occurred for CTRL+SHIFT+F:
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.format,Format,
+		Format the selected text,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@4207dd4c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+F,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.document,Format,
+		Format selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@9026555,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-10-30 03:59:47.430
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_UP:
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@1251ca72,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@19ccba05,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-10-30 03:59:47.430
+!MESSAGE A conflict occurred for CTRL+O:
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.show.outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@37c20bc3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+O,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.quick_outline,Quick Outline,
+		Show the quick outline for the editor input,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@24924bce,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-10-30 03:59:47.430
+!MESSAGE A conflict occurred for CTRL+SHIFT+/:
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.add.block.comment,Add Block Comment,
+		Enclose the selection with a block comment,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@aed424,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+/,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.add.block.comment,Add Block Comment,
+		Add Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@131ae71c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-10-30 03:59:47.430
+!MESSAGE A conflict occurred for CTRL+SHIFT+P:
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.matching.bracket,Go to Matching Bracket,
+		Moves the cursor to the matching bracket,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@55e987d5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.goto.matching.bracket,Matching Character,
+		Go to Matching Character,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@27388832,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-10-30 03:59:47.430
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_DOWN:
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@56d4dd03,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@2f1363ce,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-10-30 03:59:47.430
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_UP:
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.previous.member,Go to Previous Member,
+		Move the caret to the previous member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@30fa1c7e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.previousSibling,Previous Sibling,
+		Go to Previous Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@6112b6fa,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-10-30 03:59:47.431
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_RIGHT:
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@7464ad50,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@78ded648,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-10-30 03:59:47.431
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.toggle.comment,Toggle Comment,
+		Toggle comment the selected lines,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@7dae9ae2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.toggle.comment,Toggle Comment,
+		Toggle Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@4ef92644,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-10-30 03:59:47.431
+!MESSAGE A conflict occurred for CTRL+SHIFT+\:
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.remove.block.comment,Remove Block Comment,
+		Remove the block comment enclosing the selection,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.MakeHandlersGo@523aabe4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+\,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.remove.block.comment,Remove Block Comment,
+		Remove Block Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@51ee1175,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-10-30 03:59:47.431
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_LEFT:
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@9eb2fe9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@609685e9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2012-10-30 03:59:47.431
+!MESSAGE A conflict occurred for CTRL+SHIFT+ARROW_DOWN:
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.goto.next.member,Go to Next Member,
+		Move the caret to the next member of the compilation unit,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@2f966f15,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(CTRL+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.xml.ui.nextSibling,Next Sibling,
+		Go to Next Sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.MakeHandlersGo@40c0fca2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+
+!ENTRY org.eclipse.core.resources 4 566 2012-10-30 04:01:18.804
+!MESSAGE Could not save master table to file 'C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources'.
+!STACK 0
+java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1227)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1220)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1197)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1109)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:51)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY org.eclipse.core.resources 4 566 2012-10-30 04:02:41.344
+!MESSAGE Could not save master table to file 'C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources.bak'.
+!STACK 0
+java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources.bak (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1227)
+	at org.eclipse.core.internal.resources.SaveManager.cleanMasterTable(SaveManager.java:228)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1138)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2375)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:508)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.ui.ide 4 4 2012-10-30 04:02:42.910
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 4 1 2012-10-30 04:02:42.910
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 4 566 2012-10-30 04:02:42.910
+!MESSAGE Could not save master table to file 'C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources'.
+!STACK 0
+java.io.FileNotFoundException: C:\Android_mango\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resources (지정된 경로를 찾을 수 없습니다)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1227)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1220)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1197)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2375)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:508)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SESSION 2012-10-30 04:03:10.319 -----------------------------------------------
+eclipse.buildId=M20120914-1800
+java.version=1.7.0_07
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2012-10-30 04:03:15.732
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.osgi 4 0 2012-10-30 04:03:15.764
+!MESSAGE An error occurred while automatically activating bundle org.eclipse.core.resources (77).
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.core.resources.ResourcesPlugin.start() of bundle org.eclipse.core.resources.
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:734)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.SingleSourcePackage.loadClass(SingleSourcePackage.java:35)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:461)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:125)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+Caused by: org.eclipse.core.internal.dtree.ObjectNotFoundException: Tree element '/mangosteen_test/bin/classes/com/mangosteen/mangosteen_test/MangosteenActivity.class' not found.
+	at org.eclipse.core.internal.dtree.AbstractDataTree.handleNotFound(AbstractDataTree.java:257)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.getData(DeltaDataTree.java:585)
+	at org.eclipse.core.internal.dtree.DataDeltaNode.asBackwardDelta(DataDeltaNode.java:50)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.DataDeltaNode.asBackwardDelta(DataDeltaNode.java:47)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.asBackwardDelta(DeltaDataTree.java:88)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:816)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:815)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:792)
+	at org.eclipse.core.internal.watson.ElementTree.immutable(ElementTree.java:518)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:710)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1528)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2502)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2251)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:439)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	... 29 more
+Root exception:
+org.eclipse.core.internal.dtree.ObjectNotFoundException: Tree element '/mangosteen_test/bin/classes/com/mangosteen/mangosteen_test/MangosteenActivity.class' not found.
+	at org.eclipse.core.internal.dtree.AbstractDataTree.handleNotFound(AbstractDataTree.java:257)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.getData(DeltaDataTree.java:585)
+	at org.eclipse.core.internal.dtree.DataDeltaNode.asBackwardDelta(DataDeltaNode.java:50)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.DataDeltaNode.asBackwardDelta(DataDeltaNode.java:47)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.asBackwardDelta(DeltaDataTree.java:88)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:816)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:815)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:792)
+	at org.eclipse.core.internal.watson.ElementTree.immutable(ElementTree.java:518)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:710)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1528)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2502)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2251)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:439)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.SingleSourcePackage.loadClass(SingleSourcePackage.java:35)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:461)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:125)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+
+!ENTRY org.eclipse.osgi 4 0 2012-10-30 04:03:15.844
+!MESSAGE Application error
+!STACK 1
+java.lang.NoClassDefFoundError: org/eclipse/core/resources/IContainer
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:125)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+Caused by: org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter$TerminatingClassNotFoundException: An error occurred while automatically activating bundle org.eclipse.core.resources (77).
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:122)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.SingleSourcePackage.loadClass(SingleSourcePackage.java:35)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:461)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 14 more
+Caused by: org.osgi.framework.BundleException: Exception in org.eclipse.core.resources.ResourcesPlugin.start() of bundle org.eclipse.core.resources.
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:734)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	... 23 more
+Caused by: org.eclipse.core.internal.dtree.ObjectNotFoundException: Tree element '/mangosteen_test/bin/classes/com/mangosteen/mangosteen_test/MangosteenActivity.class' not found.
+	at org.eclipse.core.internal.dtree.AbstractDataTree.handleNotFound(AbstractDataTree.java:257)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.getData(DeltaDataTree.java:585)
+	at org.eclipse.core.internal.dtree.DataDeltaNode.asBackwardDelta(DataDeltaNode.java:50)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.NoDataDeltaNode.asBackwardDelta(NoDataDeltaNode.java:59)
+	at org.eclipse.core.internal.dtree.DataDeltaNode.asBackwardDelta(DataDeltaNode.java:47)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.asBackwardDelta(DeltaDataTree.java:88)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:816)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:815)
+	at org.eclipse.core.internal.dtree.DeltaDataTree.reroot(DeltaDataTree.java:792)
+	at org.eclipse.core.internal.watson.ElementTree.immutable(ElementTree.java:518)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:710)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1528)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2502)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2251)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:439)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	... 29 more

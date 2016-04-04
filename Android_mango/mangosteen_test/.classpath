@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="lib" path="C:/Android_mango/mangosteen_test/libs/apache-mime4j-core-0.7.jar"/>
+	<classpathentry kind="lib" path="C:/Android_mango/mangosteen_test/libs/httpmime-4.1.1.jar"/>
+	<classpathentry kind="lib" path="libs/WebSocket.jar"/>
+	<classpathentry kind="lib" path="C:/Android_mango/mangosteen_test/libs/gson-2.2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Android_mango/mangosteen_test/libs/jetty-all-7.6.4.v20120524.jar"/>
+	<classpathentry excluding="com/mangosteen/mangosteen_test/MangoSocket.java" kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

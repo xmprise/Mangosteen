@@ -1,0 +1,135 @@
+@CHARSET "EUC-KR";
+
+body {
+	font-size: 14px;
+	color: #666;
+	background: #111 no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	margin: 0px;
+	padding: 0px;
+}
+
+div#wrapper {
+	width: 1004px;
+	margin: 0 auto;
+}
+
+header {
+	color: #333;
+	float: none;
+	padding: 10px;
+	/*border: 1px solid #ccc;*/
+	height: 150px;
+	margin: 10px 0px 5px 0px;
+	background: #111 no-repeat;
+}
+
+nav {
+	float: left;
+	margin: 0px 10px 0px 0px;
+	padding: 10px;
+	height: 100%;
+	width: 45px;
+	background: #222 no-repeat;
+}
+
+
+footer {
+	clear: both;
+	height: 100px;
+	color: #333;
+	/*border: 1px solid #ccc;*/
+	background: #111 no-repeat;
+	margin: 0px 0px 10px 0px;
+	padding: 10px;
+	
+}
+
+section
+{
+	float: left;
+	heigth:100%;
+	min-height: 500px;
+	margin-bottom: 10px;
+	width: 908px;
+	padding: 10px;
+	background: #000 no-repeat;
+}
+
+nav a
+{
+	cursor:pointer;
+}
+
+div#mediaTool{
+	margin:0px 0px 20px 20px;
+}
+
+li.thumb.element {
+	cursor: pointer;
+	float: left;
+	width: 100px;
+	height: 140px;
+	margin: 0px 0px 20px 20px;
+	border: 2px solid gray;
+	text-align: center;
+}
+
+li.thumb.element :AFTER{
+	content:" ";
+	margin-left : -0.6em;
+	white-space: pre;
+}
+
+li.thumb.element img {
+	max-width: 100px;
+	max-width: 100px;
+	vertical-align: middle;
+}
+
+li.thumb.element span {
+	display: block;
+	width: 100px;
+	overflow: hidden;
+	color:white;
+}
+
+div#fileTree{
+	width:200px;
+	float:left;
+}
+
+div#MainFileView{
+	float:left;
+}
+
+div#MainPhoneInfo{
+	background-color: #FFFFFF;
+	width:500px;
+	position: relative;
+}
+
+img#s3{
+	z-index: 0;
+}
+
+img#wallPaper{
+	position:absolute;
+	left:11px;
+	top:37px;
+	z-index: 1;
+}
+
+span.btn_ico
+{
+	cursor:pointer;
+}

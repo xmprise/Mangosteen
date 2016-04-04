@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="android.widget.Button"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="org.apache.http.client.HttpClient"/>
+<fullyQualifiedTypeName name="org.apache.http.impl.client.DefaultHttpClient"/>
+<fullyQualifiedTypeName name="org.apache.http.client.methods.HttpPost"/>
+<fullyQualifiedTypeName name="org.apache.http.message.BasicNameValuePair"/>
+<fullyQualifiedTypeName name="org.apache.http.client.entity.UrlEncodedFormEntity"/>
+<fullyQualifiedTypeName name="org.apache.http.protocol.HTTP"/>
+<fullyQualifiedTypeName name="org.apache.http.HttpResponse"/>
+<fullyQualifiedTypeName name="org.apache.http.HttpEntity"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="org.apache.http.util.EntityUtils"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="org.apache.http.NameValuePair"/>
+<fullyQualifiedTypeName name="java.net.URI"/>
+<fullyQualifiedTypeName name="android.os.AsyncTask"/>
+<fullyQualifiedTypeName name="com.mangosteen.mangosteen_test.HttpRequest"/>
+<fullyQualifiedTypeName name="com.mangosteen.mangosteen_test.MainActivity"/>
+<fullyQualifiedTypeName name="com.mangosteen.mangosteen_test.AppServer"/>
+<fullyQualifiedTypeName name="com.mangosteen.mangosteen_test.MangosteenActivity"/>
+<fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="com.mangosteen.mangosteen_test.R"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="com.mangosteen.mangosteen_test.R.id"/>
+<fullyQualifiedTypeName name="java.net.InetAddress"/>
+<fullyQualifiedTypeName name="java.net.Inet4Address"/>
+</qualifiedTypeNameHistroy>

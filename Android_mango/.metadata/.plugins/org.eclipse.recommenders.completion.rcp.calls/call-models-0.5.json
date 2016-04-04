@@ -1,0 +1,22 @@
+{
+  "C:\\Users\\jung\\android-sdks\\platforms\\android-16\\android.jar": {
+    "location": "C:\\Users\\jung\\android-sdks\\platforms\\android-16\\android.jar",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027C:\\Users\\jung\\android-sdks\\platforms\\android-16\\android.jar\u0027. Neither fingerprint \u00273dcce76e951c5ffaf5fc1e15001bbf62b54e9857\u0027 nor symbolic name \u0027android\u0027 are known."
+  },
+  "C:\\Android_mango\\mangosteen_test\\gen": {
+    "location": "C:\\Android_mango\\mangosteen_test\\gen",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Android_mango\\mangosteen_test\\gen\u0027. Skipped."
+  },
+  "C:\\Android_mango\\mangosteen_test\\src": {
+    "location": "C:\\Android_mango\\mangosteen_test\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Android_mango\\mangosteen_test\\src\u0027. Skipped."
+  },
+  "C:\\Users\\jung\\android-sdks\\platforms\\android-15\\android.jar": {
+    "location": "C:\\Users\\jung\\android-sdks\\platforms\\android-15\\android.jar",
+    "status": "UNRESOLVED",
+    "error": "No call model found for \u0027C:\\Users\\jung\\android-sdks\\platforms\\android-15\\android.jar\u0027. Neither fingerprint \u002792822ec981a4d0a7f002c792e7b3b60f9a1f26fa\u0027 nor symbolic name \u0027android\u0027 are known."
+  }
+}

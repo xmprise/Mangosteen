@@ -1,0 +1,29 @@
+@CHARSET "EUC-KR";
+
+.thumb.element{
+	width: 30%;
+	height: 140px;
+	border: 2px solid gray;
+	margin: 0px 0px 10px 10px;
+	text-align: center;
+}
+
+.thumb.element :AFTER{
+	content:" ";
+	margin-left : -0.6em;
+	white-space: pre;
+}
+
+.thumb.element img {
+ 	vertical-align: middle;
+}
+
+.thumb.element span {
+	display: block;
+	width: 100px;
+	overflow: hidden;
+	color:white;
+}
+
+
+

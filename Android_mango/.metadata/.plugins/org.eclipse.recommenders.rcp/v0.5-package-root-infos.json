@@ -1,0 +1,613 @@
+[
+  {
+    "symbolicName": "com.google.gson",
+    "version": {
+      "major": 2,
+      "minor": 2,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "53bfcd3c8e310d1493b2691484525ed90b04e236",
+    "jarFileModificationDate": "2012-07-27T01:40:58+09:00",
+    "location": "C:\\Android_mango\\mangosteen_test\\libs\\gson-2.2.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ce6fd58818145ee4ea57eea327419057d179b068",
+    "jarFileModificationDate": "2012-10-12T02:04:55.360+09:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\jsse.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "com.google.android.android",
+    "version": {
+      "major": 2,
+      "minor": 3,
+      "micro": 3,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "949a2bef1ffe62e81af5d8919d17dfcc1309c43c",
+    "jarFileModificationDate": "2012-10-24T13:02:34.712+09:00",
+    "location": "C:\\Users\\jung\\.m2\\repository\\com\\google\\android\\android\\2.3.3\\android-2.3.3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.hamcrest.core",
+    "version": {
+      "major": 1,
+      "minor": 1,
+      "micro": 0,
+      "qualifier": "v20090501071000"
+    },
+    "jarFileFingerprint": "254c9660266e1177c94b1a9ba05f6f757e7fb85a",
+    "jarFileModificationDate": "2012-09-20T04:30:58+09:00",
+    "location": "C:\\eclipse-java-juno-SR1-win32-x86_64\\eclipse\\plugins\\org.hamcrest.core_1.1.0.v20090501071000.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3a4349a332a6de893e4ad297421bd405fa0825f5",
+    "jarFileModificationDate": "2012-10-12T02:04:50.292+09:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\zipfs.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9e97dada90c0f9e6531a349d8afaac488f6ff9cc",
+    "jarFileModificationDate": "2012-10-12T02:04:50.076+09:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\access-bridge-64.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "dc85787a60ac1c9379a7f0e1c78b3005bec8dfbc",
+    "jarFileModificationDate": "2012-10-12T02:04:55.400+09:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\localedata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "commons-io",
+    "version": {
+      "major": 1,
+      "minor": 3,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b6dde38349ba9bb5e6ea6320531eae969985dae5",
+    "jarFileModificationDate": "2012-10-24T13:02:29.971+09:00",
+    "location": "C:\\Users\\jung\\.m2\\repository\\commons-io\\commons-io\\1.3.2\\commons-io-1.3.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5d128a70e24c25e7106978ecb9962434b06356b8",
+    "jarFileModificationDate": "2012-10-12T02:04:50.077+09:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\dnsns.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "com.google.gson",
+    "version": {
+      "major": 2,
+      "minor": 2,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "53bfcd3c8e310d1493b2691484525ed90b04e236",
+    "jarFileModificationDate": "2012-07-27T01:40:58+09:00",
+    "location": "C:\\Users\\jung\\Documents\\네이트온 받은 파일\\AndroidWebServer(1)\\AndWeb2\\libs\\gson-2.2.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "WebSocket",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4bf15a84075c786d446133a59a34c20c8a82648f",
+    "jarFileModificationDate": "2012-10-18T14:58:30+09:00",
+    "location": "C:\\Android_mango\\mangosteen_test\\libs\\WebSocket.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "junit",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "365907cf1e488e967f1d3e923d0111b36d930ee6",
+    "jarFileModificationDate": "2012-05-26T06:46:30+09:00",
+    "location": "C:\\eclipse-java-juno-SR1-win32-x86_64\\eclipse\\plugins\\org.junit_4.10.0.v4_10_0_v20120426-0900\\junit.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.slf4j.android",
+    "version": {
+      "major": 1,
+      "minor": 6,
+      "micro": 1,
+      "qualifier": "RC1"
+    },
+    "jarFileFingerprint": "fe76e182946faad493a50968f3344e848b467b42",
+    "jarFileModificationDate": "2012-10-24T13:02:29.189+09:00",
+    "location": "C:\\Users\\jung\\.m2\\repository\\org\\slf4j\\slf4j-android\\1.6.1-RC1\\slf4j-android-1.6.1-RC1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.commons.fileupload",
+    "version": {
+      "major": 1,
+      "minor": 2,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1e48256a2341047e7d729217adeec8217f6e3a1a",
+    "jarFileModificationDate": "2012-10-24T13:02:29.830+09:00",
+    "location": "C:\\Users\\jung\\.m2\\repository\\commons-fileupload\\commons-fileupload\\1.2.2\\commons-fileupload-1.2.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "android",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3dcce76e951c5ffaf5fc1e15001bbf62b54e9857",
+    "jarFileModificationDate": "2012-10-12T02:52:22.072+09:00",
+    "location": "C:\\Users\\jung\\android-sdks\\platforms\\android-16\\android.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f6734262725d0c84f5e43cdeab419da9b80b299c",
+    "jarFileModificationDate": "2012-10-12T02:04:50.809+09:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\jfr.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "json-org",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d78566b67be139b182eb701e4710b549af4ff79d",
+    "jarFileModificationDate": "2012-10-18T14:58:30+09:00",
+    "location": "C:\\Users\\jung\\Documents\\Gottox-socket.io-java-client-2e22f0b\\libs\\json-org.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.james.apache-mime4j-core",
+    "version": {
+      "major": 0,
+      "minor": 7,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a06e8c6d9fa4063df541427686e9f070377b7b8e",
+    "jarFileModificationDate": "2012-10-12T03:23:50.869+09:00",
+    "location": "C:\\Android_mango\\mangosteen_test\\libs\\apache-mime4j-core-0.7.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2bad7bafb33c65f78f00999c4a8d9ab9728c21b4",
+    "jarFileModificationDate": "2012-10-12T02:04:50.290+09:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\sunjce_provider.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "WebSocket",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4bf15a84075c786d446133a59a34c20c8a82648f",
+    "jarFileModificationDate": "2012-10-18T14:58:30+09:00",
+    "location": "C:\\Users\\jung\\Documents\\Gottox-socket.io-java-client-2e22f0b\\libs\\WebSocket.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "opengl-api-gl1.1-android-2.1_r1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "8827d279add29cf9115820671e7879de7bf80390",
+    "jarFileModificationDate": "2012-10-24T13:02:28.406+09:00",
+    "location": "C:\\Users\\jung\\.m2\\repository\\org\\khronos\\opengl-api\\gl1.1-android-2.1_r1\\opengl-api-gl1.1-android-2.1_r1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "xmlParserAPIs-2.6.2",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "065acede1e5305bd2b92213d7b5761328c6f4fd9",
+    "jarFileModificationDate": "2012-10-24T13:02:29.068+09:00",
+    "location": "C:\\Users\\jung\\.m2\\repository\\xerces\\xmlParserAPIs\\2.6.2\\xmlParserAPIs-2.6.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.imgscalr.imgscalr-lib",
+    "version": {
+      "major": 4,
+      "minor": 2,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e2838f7119361511ef7d54fe0d502bf07f3325eb",
+    "jarFileModificationDate": "2012-10-24T13:02:31.458+09:00",
+    "location": "C:\\Users\\jung\\.m2\\repository\\org\\imgscalr\\imgscalr-lib\\4.2\\imgscalr-lib-4.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "android",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b50d42b32e1d8a6c2d5f19a846474d5e2199c68e",
+    "jarFileModificationDate": "2012-10-12T03:58:33.630+09:00",
+    "location": "C:\\Users\\jung\\android-sdks\\platforms\\android-10\\android.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpmime",
+    "version": {
+      "major": 4,
+      "minor": 1,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d34b163e52a9727101aced60775d51c5085390a1",
+    "jarFileModificationDate": "2012-10-12T03:23:53.633+09:00",
+    "location": "C:\\Android_mango\\mangosteen_test\\libs\\httpmime-4.1.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.jetty.aggregate.jetty-all",
+    "version": {
+      "major": 7,
+      "minor": 6,
+      "micro": 4,
+      "qualifier": "v20120524"
+    },
+    "jarFileFingerprint": "24d9b3747066880bc8372d606aa1a312c0d82681",
+    "jarFileModificationDate": "2012-07-12T02:13:32+09:00",
+    "location": "C:\\Android_mango\\mangosteen_test\\libs\\jetty-all-7.6.4.v20120524.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.jetty.aggregate.jetty-all",
+    "version": {
+      "major": 7,
+      "minor": 6,
+      "micro": 4,
+      "qualifier": "v20120524"
+    },
+    "jarFileFingerprint": "24d9b3747066880bc8372d606aa1a312c0d82681",
+    "jarFileModificationDate": "2012-07-12T02:13:32+09:00",
+    "location": "C:\\Users\\jung\\Documents\\네이트온 받은 파일\\AndroidWebServer(1)\\AndWeb2\\libs\\jetty-all-7.6.4.v20120524.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "android-support-v4",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "612846c9857077a039b533718f72db3bc041d389",
+    "jarFileModificationDate": "2012-10-12T03:05:28.707+09:00",
+    "location": "C:\\Android_mango\\mangosteen_test\\libs\\android-support-v4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f56383db77ae9502e6ca617e57d55ee73d631c46",
+    "jarFileModificationDate": "2012-10-12T02:04:50.288+09:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\sunec.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "com.google.gson",
+    "version": {
+      "major": 2,
+      "minor": 2,
+      "micro": 2,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1f96456ca233dec780aa224bff076d8e8bca3908",
+    "jarFileModificationDate": "2012-10-24T13:02:30.295+09:00",
+    "location": "C:\\Users\\jung\\.m2\\repository\\com\\google\\code\\gson\\gson\\2.2.2\\gson-2.2.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9c65be66b7d064aa969eed550ce6bca0c930fd4c",
+    "jarFileModificationDate": "2012-10-12T02:04:50.807+09:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\jce.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "commons-logging",
+    "version": {
+      "major": 1,
+      "minor": 1,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5043bfebc3db072ed80fbd362e7caf00e885d8ae",
+    "jarFileModificationDate": "2012-10-24T13:02:28.164+09:00",
+    "location": "C:\\Users\\jung\\.m2\\repository\\commons-logging\\commons-logging\\1.1.1\\commons-logging-1.1.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "70020954a878f151d863091253774186b91b4ac2",
+    "jarFileModificationDate": "2012-10-12T02:04:50.291+09:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\sunmscapi.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "70ea78a4a4d90afbeb4160e9be437f61401f4129",
+    "jarFileModificationDate": "2012-10-12T02:04:54.872+09:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\charsets.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "commons-codec-1.3",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "fd32786786e2adb664d5ecc965da47629dca14ba",
+    "jarFileModificationDate": "2012-10-24T13:02:28.136+09:00",
+    "location": "C:\\Users\\jung\\.m2\\repository\\commons-codec\\commons-codec\\1.3\\commons-codec-1.3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "xpp3-1.1.4c",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9b988ea84b9e4e9f1874e390ce099b8ac12cfff5",
+    "jarFileModificationDate": "2012-10-24T13:02:31.341+09:00",
+    "location": "C:\\Users\\jung\\.m2\\repository\\xpp3\\xpp3\\1.1.4c\\xpp3-1.1.4c.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "acba57835f18f9baca84e63b54b010b7bcddc96f",
+    "jarFileModificationDate": "2012-10-12T02:04:50.078+09:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\jaccess.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpclient",
+    "version": {
+      "major": 4,
+      "minor": 0,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1d7d28fa738bdbfe4fbd895d9486308999bdf440",
+    "jarFileModificationDate": "2012-10-24T13:02:28.732+09:00",
+    "location": "C:\\Users\\jung\\.m2\\repository\\org\\apache\\httpcomponents\\httpclient\\4.0.1\\httpclient-4.0.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "servlet-api-2.5",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5959582d97d8b61f4d154ca9e495aafd16726e34",
+    "jarFileModificationDate": "2012-10-24T13:02:27.852+09:00",
+    "location": "C:\\Users\\jung\\.m2\\repository\\javax\\servlet\\servlet-api\\2.5\\servlet-api-2.5.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.eclipse.jetty.util",
+    "version": {
+      "major": 7,
+      "minor": 6,
+      "micro": 4,
+      "qualifier": "v20120524"
+    },
+    "jarFileFingerprint": "f31e9f3f7de87475dbff0b250864e853c177542d",
+    "jarFileModificationDate": "2012-10-24T13:02:32.050+09:00",
+    "location": "C:\\Users\\jung\\.m2\\repository\\org\\eclipse\\jetty\\jetty-util\\7.6.4.v20120524\\jetty-util-7.6.4.v20120524.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b44a09b019925253268e23192c164ff621ff2932",
+    "jarFileModificationDate": "2012-10-12T02:04:54.709+09:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\rt.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "annotations",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f68f82be8f2051d277ee74fb859d63de8e33053c",
+    "jarFileModificationDate": "2012-10-12T02:44:13.426+09:00",
+    "location": "C:\\Users\\jung\\android-sdks\\tools\\support\\annotations.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpcore",
+    "version": {
+      "major": 4,
+      "minor": 0,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e813b8722c387b22e1adccf7914729db09bcb4a9",
+    "jarFileModificationDate": "2012-10-24T13:02:28.659+09:00",
+    "location": "C:\\Users\\jung\\.m2\\repository\\org\\apache\\httpcomponents\\httpcore\\4.0.1\\httpcore-4.0.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d67f302f916616348e4d6938898f02d0f97c784b",
+    "jarFileModificationDate": "2012-10-12T02:04:51.107+09:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\resources.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.eclipse.jetty.io",
+    "version": {
+      "major": 7,
+      "minor": 6,
+      "micro": 4,
+      "qualifier": "v20120524"
+    },
+    "jarFileFingerprint": "7e2c7d9d14f7a5d2f86f7d578cbfeb146cf2cbba",
+    "jarFileModificationDate": "2012-10-24T13:02:30.836+09:00",
+    "location": "C:\\Users\\jung\\.m2\\repository\\org\\eclipse\\jetty\\jetty-io\\7.6.4.v20120524\\jetty-io-7.6.4.v20120524.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "android",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "92822ec981a4d0a7f002c792e7b3b60f9a1f26fa",
+    "jarFileModificationDate": "2012-10-12T03:52:32.987+09:00",
+    "location": "C:\\Users\\jung\\android-sdks\\platforms\\android-15\\android.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.json.json",
+    "version": {
+      "major": 20080701,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d652f102185530c93b66158b1859f35d45687258",
+    "jarFileModificationDate": "2012-10-24T13:02:29.111+09:00",
+    "location": "C:\\Users\\jung\\.m2\\repository\\org\\json\\json\\20080701\\json-20080701.jar",
+    "javaRuntime": false
+  }
+]

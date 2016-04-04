@@ -1,0 +1,61 @@
+SKIPHEADERS                            += %_tablegen.h                  \
+                                          %_tables.h                    \
+                                          aac_tablegen_decl.h           \
+                                          fft-internal.h                \
+                                          tableprint.h                  \
+                                          $(ARCH)/vp56_arith.h
+SKIPHEADERS-$(CONFIG_DXVA2)            += dxva2.h dxva2_internal.h
+SKIPHEADERS-$(CONFIG_LIBDIRAC)         += libdirac.h
+SKIPHEADERS-$(CONFIG_LIBSCHROEDINGER)  += libschroedinger.h
+SKIPHEADERS-$(CONFIG_VAAPI)            += vaapi_internal.h
+SKIPHEADERS-$(CONFIG_VDPAU)            += vdpau.h
+SKIPHEADERS-$(CONFIG_XVMC)             += xvmc.h
+
+TESTPROGS = cabac dct fft fft-fixed h264 iirfilter rangecoder snow
+TESTPROGS-$(HAVE_MMX) += motion
+TESTOBJS = dctref.o
+
+HOSTPROGS = aac_tablegen aacps_tablegen cbrt_tablegen cos_tablegen      \
+            dv_tablegen motionpixels_tablegen mpegaudio_tablegen        \
+            pcm_tablegen qdm2_tablegen sinewin_tablegen
+
+DIRS = alpha arm bfin mlib ppc ps2 sh4 sparc x86
+
+CLEANFILES = *_tables.c *_tables.h *_tablegen$(HOSTEXESUF)
+
+#include $(SUBDIR)../subdir.mak
+
+$(SUBDIR)dct-test$(EXESUF): $(SUBDIR)dctref.o
+
+TRIG_TABLES  = cos cos_fixed sin
+TRIG_TABLES := $(TRIG_TABLES:%=$(SUBDIR)%_tables.c)
+
+$(TRIG_TABLES): $(SUBDIR)%_tables.c: $(SUBDIR)cos_tablegen$(HOSTEXESUF)
+	$(M)./$< $* > $@
+
+ifdef CONFIG_SMALL
+$(SUBDIR)%_tablegen$(HOSTEXESUF): HOSTCFLAGS += -DCONFIG_SMALL=1
+else
+$(SUBDIR)%_tablegen$(HOSTEXESUF): HOSTCFLAGS += -DCONFIG_SMALL=0
+endif
+
+GEN_HEADERS = cbrt_tables.h aacps_tables.h aac_tables.h dv_tables.h     \
+              sinewin_tables.h mpegaudio_tables.h motionpixels_tables.h \
+              pcm_tables.h qdm2_tables.h
+GEN_HEADERS := $(addprefix $(SUBDIR), $(GEN_HEADERS))
+
+$(GEN_HEADERS): $(SUBDIR)%_tables.h: $(SUBDIR)%_tablegen$(HOSTEXESUF)
+	$(M)./$< > $@
+
+ifdef CONFIG_HARDCODED_TABLES
+$(SUBDIR)aacdec.o: $(SUBDIR)cbrt_tables.h
+$(SUBDIR)aacps.o: $(SUBDIR)aacps_tables.h
+$(SUBDIR)aactab.o: $(SUBDIR)aac_tables.h
+$(SUBDIR)dv.o: $(SUBDIR)dv_tables.h
+$(SUBDIR)sinewin.o: $(SUBDIR)sinewin_tables.h
+$(SUBDIR)mpegaudiodec.o: $(SUBDIR)mpegaudio_tables.h
+$(SUBDIR)mpegaudiodec_float.o: $(SUBDIR)mpegaudio_tables.h
+$(SUBDIR)motionpixels.o: $(SUBDIR)motionpixels_tables.h
+$(SUBDIR)pcm.o: $(SUBDIR)pcm_tables.h
+$(SUBDIR)qdm2.o: $(SUBDIR)qdm2_tables.h
+endif
