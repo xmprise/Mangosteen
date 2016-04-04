@@ -1,0 +1,12 @@
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Mangosteen\Mangosteen\bin\Debug\Mangosteen.exe
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Mangosteen\Mangosteen\bin\Debug\Mangosteen.pdb
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Mangosteen\Mangosteen\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Mangosteen\Mangosteen\obj\Debug\Mangosteen.exe
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\Mangosteen\Mangosteen\obj\Debug\Mangosteen.pdb
+C:\Users\BSSM_JBJ\Desktop\나\멤\과제\Mangosteen(창의)\최종\Mangosteen-릴레이\Mangosteen\obj\Debug\Mangosteen.exe
+C:\Users\BSSM_JBJ\Desktop\나\멤\과제\Mangosteen(창의)\최종\Mangosteen-릴레이\Mangosteen\obj\Debug\Mangosteen.pdb
+C:\Users\BSSM_JBJ\Desktop\나\멤\과제\Mangosteen(창의)\최종\Mangosteen-릴레이\Mangosteen\bin\Debug\Mangosteen.exe
+C:\Users\BSSM_JBJ\Desktop\나\멤\과제\Mangosteen(창의)\최종\Mangosteen-릴레이\Mangosteen\bin\Debug\Mangosteen.pdb
+C:\Users\BSSM_JBJ\Desktop\나\멤\과제\Mangosteen(창의)\최종\Mangosteen-릴레이\Mangosteen\obj\Debug\Mangosteen.csprojResolveAssemblyReference.cache
+F:\D드라이브 백업\멥버십 자료\창의과제\망고스틴\소스코드\Mangosteen-릴레이\Mangosteen\obj\Debug\Mangosteen.exe
+F:\D드라이브 백업\멥버십 자료\창의과제\망고스틴\소스코드\Mangosteen-릴레이\Mangosteen\obj\Debug\Mangosteen.pdb
