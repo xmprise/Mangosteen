@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR" />	
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/mobileRequest.js"></script>
+	<script type="text/javascript" src="mangoAPI.js"></script>
+	<script type="text/javascript" src="mangoAPI.hayoung.js"></script>
+	<script src="media_controll.js" type="text/javascript"></script>
+	<script src="jquery.easing.js" type="text/javascript"></script>
+	<script src='js/popup/jquery.smartPop.js' type='text/javascript'></script>
+	<script type="text/javascript" src="js/jwplayer/jwplayer.js"></script>
+	
+	<!-- <link href="menu.css" rel="stylesheet" type="text/css">  -->
+<title>Mangosteen Home</title>
+</head>
+<body>
+<div id="container">Loading the player ...</div>
+	<script type="text/javascript">
+	jwplayer("container").setup({
+	flashplayer: "js/jwplayer//player.swf",
+	file: "http://www.tools4movies.com/dvd_catalyst_profile_samples/Harold%20Kumar%203%20Christmas%20bionic.mp4",
+	height: 480,
+	width: 640
+	});
+	</script>
+</body>
+</html>

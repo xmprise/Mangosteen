@@ -1,0 +1,9 @@
+#EXTM3U
+#EXT-X-TARGETDURATION:5
+#EXT-X-MEDIA-SEQUENCE:35
+#EXTINF:2,
+temp/video_35.ts
+#EXTINF:2,
+temp/video_36.ts
+#EXTINF:2,
+temp/video_37.ts

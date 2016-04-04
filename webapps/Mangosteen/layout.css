@@ -1,0 +1,566 @@
+@CHARSET "EUC-KR";
+
+body {
+	font-size: 14px;
+	color: #666;
+	background: #111 no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	margin: 0px;
+	padding: 0px;
+}
+
+div#wrapper {
+	width: 1257px;
+	margin: 0 auto;
+}
+
+header {
+	color: #333;
+	float: none;
+	padding: 10px;
+	/*border: 1px solid #ccc;*/
+	height: 150px;
+	margin: 10px 0px 5px 0px;
+	background: #111 no-repeat;
+}
+
+nav {
+	float: left;
+	margin: 0px 10px 0px 0px;
+	padding: 10px;
+	height: 100%;
+	width: 45px;
+	background: #222 no-repeat;
+}
+
+
+footer {
+	clear: both;
+	height: 100px;
+	color: #333;
+	/*border: 1px solid #ccc;*/
+	background: #111 no-repeat;
+	margin: 0px 0px 10px 0px;
+	padding: 10px;
+	
+}
+
+section
+{
+	float: left;
+	heigth:100%;
+	min-height: 500px;
+	margin-bottom: 10px;
+	width: 908px;
+	padding: 10px;
+	background: #000 no-repeat;
+	border-radius: 30px;
+}
+
+nav a
+{
+	cursor:pointer;
+}
+
+div#mediaTool{
+	margin:10px 0px 20px 20px;
+	height: 35px;	
+}
+
+div#MediaThumbList
+{
+	float: left;
+	margin-top: 15px;
+}
+
+li.thumb.element {
+	position: relative;
+	cursor: pointer;
+	float: left;
+	width: 100px;
+	height: 140px;
+	margin: 0px 0px 20px 20px;
+	border: 2px solid gray;
+	text-align: center;
+}
+
+li.thumb.element :AFTER{
+	content:" ";
+	margin-left : -0.6em;
+	white-space: pre;
+}
+
+li.thumb:hover{
+	background: #0C90B1 no-repeat;
+	border: 2px solid #F5FF00;
+}
+
+li.thumb.element img {
+	max-width: 100px;
+	max-height: 100px;
+	vertical-align: middle;
+}
+
+li.thumb.element span {
+	position:absolute;
+	display: block;
+	width: 100px;
+	height: 15px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	color:white;
+}
+
+span#folderName
+{
+	bottom:20px;
+}
+span#fileOfNum
+{
+	bottom:5px;
+}
+
+span#fileName
+{
+	bottom:5px;
+}
+
+
+div#fileTree{
+	width:200px;
+	float:left;
+	margin-top: 15px;
+}
+
+div#MainFileView{
+	float:left;
+	margin-top: 15px;
+}
+
+div#MainFileView li:hover{
+	background: #7A04B1 no-repeat;
+}
+
+div#MainPhoneInfo{
+	background-color: #FFFFFF;
+	width:700px;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 50px;
+	border-radius: 15px;
+}
+
+span.phoneTitle.model
+{
+	position: absolute;
+	top: 10px;
+	left: 120px;
+}
+
+span.phoneTitle.os
+{
+	position: absolute;
+	top: 60px;
+	left: 200px;
+}
+
+span.phoneTitle.number
+{
+	position: absolute;
+	top: 110px;
+	left: 200px;
+}
+
+div.interStorage
+{
+	position: absolute;
+	top: 250px;
+	left: 250px;
+	height: 50px;
+	width: 430px;
+}
+
+div.stitle
+{
+	display: block;
+}
+
+div.interStorage .bar
+{
+	width: 430px;
+	height: 16px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	background: #8399B0;
+	border: solid 1px #999;
+	color: white;
+	font-weight: bold;
+	line-height: 18px;
+	position: relative;
+	top: 5px;
+}
+
+div.using
+{
+	width: 100px;
+	height: 13px;
+	line-height: 13px;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #40B517;
+	background: -webkit-gradient(linear,0 0,0 100%,from(#40B517) to(#349E0E));
+	background: -webkit-linear-gradient(#40B517,#349E0E);
+	background: -moz-linear-gradient(#40B517,#349E0E);
+	background: -ms-linear-gradient(#40B517,#349E0E);
+	background: -o-linear-gradient(#40B517,#349E0E);
+	background: linear-gradient(#40B517,#349E0E);
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	-webkit-box-shadow: .6px .6px 1px 1px gray;
+	box-shadow: .6px .6px 1px 1px gray;
+	padding: 1px;
+}
+
+div .mask_text
+{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+div.s_sd_storage .bar
+{
+	overflow: hidden;
+	width: 430px;
+	height: 16px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	background: #8399B0;
+	border: solid 1px #999;
+	color: white;
+	font-weight: bold;
+	line-height: 18px;
+	position: relative;
+	top: 5px;	
+}
+div.s_sd_storage
+{
+	position: absolute;
+	top: 300px;
+	left: 250px;
+	height: 50px;
+	width: 430px;
+}
+
+img#s3{
+	z-index: 0;
+	margin: 10px 0px 10px 10px;
+}
+
+img#wallPaper{
+	position:absolute;
+	left:21px;
+	top:47px;
+	z-index: 1;
+}
+
+span.btn_ico
+{
+	cursor:pointer;
+}
+
+div#downloader
+{
+	float:left;
+}
+div.qq-download-button
+{
+	position: relative;
+	overflow: hidden;
+	direction: ltr;
+	display: block;
+	width: 105px;
+	padding: 7px 0;
+	text-align: center;
+	background: #800;
+	border-bottom: 1px solid #DDD;
+	color: white;
+	margin-right: 5px;
+	border-radius : 15px;
+}
+div.qq-download-button:hover
+{
+	background: yellow;
+}
+
+div.qq-upload-button
+{
+	margin-right: 5px;
+	border-radius : 15px;
+}
+
+div#jp_container_1
+{
+	float: left;
+	margin-left:10px;
+	margin-top:20px;
+}
+
+div#file-uploader-demo1
+{
+	width: 250px;
+	float: left;
+}
+
+.icon-btns
+{
+	width: 600px;
+	height: 30px;
+	float: left;
+}
+
+.icon-btn
+{
+	background: transparent url("ImgResource/Toolbar.png") no-repeat;
+	display: block;
+	width: 30px;
+	height: 30px;
+}
+
+.icon-btns, .icon-btns button {
+	display: inline-block;
+	margin-left: 10px;
+	background-color: transparent;
+}
+
+.btn-selectall {
+	background-position: -490px -388px;
+}
+
+.disabled .btn-paste, .disabled .btn-paste:hover {
+	background-position: -490px -423px;
+}
+
+.btn-openfolder{
+	background: url("ImgResource/open_abled.png") no-repeat;
+	display: block;
+	width: 22px;
+	height: 27px;
+}
+
+.disabled .btn-openfolder, .disabled .btn-openfolder:hover {
+	background: url("ImgResource/open_disabled.png") no-repeat;
+}
+
+.btn-openfolder:hover{
+	background: url("ImgResource/open_hover.png") no-repeat;
+}
+
+.btn-expand{
+	background: url("ImgResource/expand.png") no-repeat;
+	height:27px;
+}
+
+.disabled .btn-expand, .disabled .btn-expand:hover {
+	background: url("ImgResource/expand_disabled.png") no-repeat;
+}
+
+.btn-expand:hover{
+	background: url("ImgResource/expand.png") no-repeat;
+}
+
+.btn-download{
+	background: url("images/contextMenu/download.png") no-repeat;
+	height:27px;
+}
+
+.disabled .btn-download, .disabled .btn-download:hover {
+	background: url("ImgResource/download.png") no-repeat;
+}
+
+.btn-download:hover{
+	background: url("images/contextMenu/download.png") no-repeat;
+}
+
+
+.btn-play{
+	background: url("ImgResource/play.png") no-repeat;
+	height:27px;
+}
+
+.disabled .btn-play, .disabled .btn-play:hover {
+	background: url("images/contextMenu/play.png") no-repeat;
+}
+
+.btn-play:hover{
+	background: url("ImgResource/play.png") no-repeat;
+}
+
+.btn-wallpaper {
+	background: url("images/contextMenu/wallpaper.png") no-repeat;
+	height:27px;
+}
+
+.disabled .btn-wallpaper, .disabled .btn-wallpaper:hover {
+	background: url("ImgResource/wallpaper_disabled.png") no-repeat;
+}
+
+.btn-wallpaper:hover{
+	background: url("images/contextMenu/wallpaper.png") no-repeat;
+}
+
+.btn-ringtone {
+	background: url("images/contextMenu/ringtone.png") no-repeat;
+	height:27px;
+}
+
+.disabled .btn-ringtone, .disabled .btn-ringtone:hover {
+	background: url("ImgResource/ringtone_disabled.png") no-repeat;
+}
+
+.btn-ringtone:hover{
+	background: url("images/contextMenu/ringtone.png") no-repeat;
+}
+
+.btn-newfolder
+{
+	background-position: -346px -388px;
+}
+
+.disabled .btn-newfolder, .disabled .btn-newfolder:hover {
+	background-position: -346px -423px;
+}
+
+.btn-newfolder:hover
+{
+	background-position: -346px -458px;
+}
+
+.btn-rename {
+	background-position: -383px -388px;
+}
+
+.disabled .btn-rename, .disabled .btn-rename:hover {
+	background-position: -383px -423px;
+}
+
+.btn-rename:hover{
+	background-position: -383px -458px;
+}
+
+.btn-cut {
+	background-position: -416px -388px;
+}
+
+.disabled .btn-cut, .disabled .btn-cut:hover {
+	background-position: -416px -423px;
+}
+
+.btn-cut:hover {
+	background-position: -416px -458px;
+}
+
+.btn-copy {
+	background-position: -452px -388px;
+}
+
+.disabled .btn-copy, .disabled .btn-copy:hover {
+	background-position: -452px -423px;
+	cursor: default;
+}
+
+.btn-copy:hover{
+	background-position: -452px -458px;
+}
+
+.btn-paste {
+	background-position: -490px -388px;
+}
+
+.disabled .btn-paste, .disabled .btn-paste:hover {
+	background-position: -490px -423px;
+}
+
+.btn-paste:hover{
+	background-position: -490px -458px;
+}
+
+.btn-delete {
+	background-position: -524px -388px;
+}
+
+.disabled .btn-delete, .disabled .btn-delete:hover {
+	background-position: -524px -423px;
+}
+
+.btn-delete:hover{
+	background-position: -524px -458px;
+}
+
+.i-cursor-hand {
+	cursor: pointer;
+}
+
+div.btn-select-all
+{
+	float: left;
+	margin-top: 2px;
+}
+
+.checkbox, .checkbox_all {
+	background: url("imgResource/Toolbar.png") no-repeat scroll -349px -110px transparent;
+	cursor: pointer;
+	display: block;
+	height: 16px;
+	width: 16px;
+	margin: 1px auto;
+}
+.checkbox.checked, .checkbox_all.checked {
+	background-position: -349px -162px;
+}
+.checkbox.i-float-left {
+	float: left;
+}
+
+.ml6 {
+	margin-left: 6px;
+}
+
+.mediaType
+{
+	
+	background-repeat: no-repeat;
+	background-color: transparent!important;
+	background-position: center center!important;
+	height: 100px;
+	margin-right: 4px;
+}
+
+button
+{
+	cursor: pointer;
+	-webkit-appearance: button;
+	line-height: normal;
+	vertical-align: baseline;
+	padding: 0;
+	border: 0;
+	font-weight: normal;
+	font-style: normal;
+}
