@@ -1,0 +1,90 @@
+!!! 5
+html
+  head
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/styles.css')
+    script(type='text/javascript', src='http://code.jquery.com/jquery-1.7.min.js')
+    script(type='text/javascript', src='/javascripts/jquery.validate.js')
+    style(type='text/css')
+        input.error, textarea.error{
+            border:1px dashed red;
+        }
+        label.error{
+            display:block;
+            color:red;
+        }
+
+    script(type='text/javascript')
+        $(document).ready(function() {
+
+          $('#form1').validate({
+            rules: {
+                id: {
+                      required: true,
+                      minlength: 3,
+                      eng: true
+                },
+                pwd: { required: true },
+                cpwd: { equalTo: "#pwd" },
+                email: { required: true, email: true },
+                name: { required: true, eng: true }
+            },
+            messages: {
+                id: {
+                    required: "아이디를 입력하시오.",
+                    minlength: jQuery.format("아이디는 {0}자 이상"),
+                    remote : jQuery.format("{0}는 이미 있는 아이디")
+                },
+                pwd: { required: "암호를 입력하시오." },
+                cpwd: { equalTo: "암호를 다시 확인하세요." },
+                email: { email: "올바른 이메일을 입력하시오." },
+                name: { required: "이름을 입력하시오." }
+
+            },
+
+            submitHandler: function (form) {
+                form.submit(); // 통과시 전송
+            },
+            success: function (e) {
+                //
+            }
+            });
+          });
+
+    title Mangosteen
+  body
+    #wrap
+      #contentwrap
+        #content
+          h2 Mangosteen DataLink System
+          form#form1(method='post', action='/user-join')
+
+            p
+              label(for='id')
+              | Username:
+              input#id(type='text', name='id', size='20')
+            p
+              label(for='password')
+              | Password:
+              input#pwd(type='password', name='pwd', size='20', style='position: relative; left: 3px;')
+            p
+              label(for='confirm')
+              | Confirm:
+              input#cpwd(type='password', name='cpwd', size='20', style='position: relative; left: 15px;')
+            p
+              label(for='email')
+              | E-mail:
+              input#email(type='text', name='email', size='20', style='position: relative; left: 23px;')
+            p
+              label(for='name')
+              | Nickname:
+              input#name(type='text', name='name', size='20', style='position: relative; left: 5px;')
+            p
+              span.button.black
+                input(type='submit', name='submit', value=' Join ')
+
+          td
+        div(style='clear: both;')
+      #bottom
+      #footer
+        p Samsung Software Membership 2012 Mangosteen Project

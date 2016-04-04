@@ -1,0 +1,46 @@
+!!! 5
+html
+  head
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/styles.css')
+
+    title Mangosteen
+  body
+    #wrap
+      #contentwrap
+        #content
+          h2 Mangosteen DataLink System
+            img(src='images/mangosteen2.png', align='right')
+          p
+              form#form1(name='form1', method='post', action='')
+                  label(for='email')
+                  | Username:
+                  input#email(type='text', name='email', size='20')
+                  br
+                  label(for='password')
+                  | Password :
+                  input#pwd(type='password', name='pwd', size='20')
+                  p
+                      p
+                          span.button.black
+                            input(type='submit', name='submit', value='Login', onclick='request_login()')
+                          span.button.black
+                            input(type='submit', name='join', value='Join', onclick='request_join()')
+
+
+        div(style='clear: both;')
+      #bottom
+      #footer
+
+        p Samsung Software Membership 2012 Mangosteen Project
+
+    script
+          function request_login(){
+              document.form1.action = '/login';
+              document.form1.submit();
+          }
+
+          function request_join(){
+              document.form1.action = '/join';
+              document.form1.submit();
+          }

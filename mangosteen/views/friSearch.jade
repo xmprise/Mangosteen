@@ -1,0 +1,138 @@
+!!! 5
+html(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
+head
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    script(type='text/javascript', src='http://code.jquery.com/jquery-1.7.min.js')
+    script(type='text/javascript', src='/javascripts/jquery.smartPop.js')
+    link(rel='stylesheet', href='/stylesheets/jquery.smartPop.css')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/style_main.css')
+
+    script
+
+          $(document).ready(function(){
+              // sm 클래스 바로 하위에 있는 a 태그를 클릭했을때
+              $(".menu>a").click(function(){
+                    var submenu = $(this).next("ul");
+
+                    if( submenu.is(":visible") ){
+                        submenu.slideUp();
+                    }else{
+                        submenu.slideDown();
+                    }
+                });
+          });
+
+    script(type='text/javascript')
+          $(document).ready(function() {
+            $('#rts').click(function() {
+                $.smartPop.open({ background: "gray", width: 500, height: 500, url: "http://210.118.69.79:3000/request"
+                });
+            });
+          });
+
+    title Mangosteen
+  body
+    #wrap
+      #header
+        h1
+          a(href='http://210.118.69.79:3000/main') Mangosteen DataLink
+      #menu
+        ul
+          li
+            a(href='http://210.118.69.79:3000/main') Mangosteen
+          li
+            a(href='#') Look Friend
+          li
+             a(href='#') Friend Request
+
+      #contentwrap
+        #content
+          h2 Search Your Friend. Please, Insert Friend ID.
+
+          p
+          form#form1(method='post', action='/search')
+                    <div class="expandingText" style="position: relative; "><textarea class="expanding expanding-init" name="msg" id="editMessage" placeholder="Insert Your Friend ID." style="position: absolute; height: 100%; resize: none; "></textarea><pre class="textareaClone" style="visibility: hidden; border: 1px solid; white-space: pre-wrap; line-height: 19.5px; word-wrap: break-word; padding: 6.5px; margin-top: 6.5px; margin-bottom: 6.5px; box-sizing: border-box; "><div> </div></pre></div>
+                    p
+                    span.button.black
+                        input#send(type='submit', name='submit', value='search')
+          p
+
+        #sidebar
+          h2#myName #{email}
+          ul
+                    li(type='none').menu
+                        a
+                            img(src=User_Picture, alt='aaaa')
+
+        div(style='clear: both;')
+        #columns
+          #column1
+            h3 Result
+            ul
+                -if(friend_search.status == 'Failed'){
+                     p
+                         h2
+                            b= "No Search Friend. "
+                 -}else{
+                    - each user in friend_search
+                        p
+                         li(type='none').menu
+                            a
+                              img(src=user.MemberPicture, alt='aaaa')
+                            ul.hide
+                              a(href='#')
+                               .exp
+                                    span.button.black
+                                        input#sample1.button(type='submit', value='Request Friend.')
+                         p
+                            h2
+                                b(name='userN')= user.UserName + ' : ' + user.Name
+                 -}
+
+                 //#target.target Right Click Here
+          div(style='clear: both;')
+      #bottom
+      #footer
+        p
+          | Samsung Software Membership 2012 Mangosteen Project
+
+     script(type='text/javascript')
+                window.onload = function() {
+                    var myName = document.getElementById("myName").innerHTML;
+
+                    var socket = io.connect('http://210.118.69.79:3000', {
+                                'reconnect' : true
+                                , 'resource' : 'socket.io'
+                    });
+
+                    socket.on('connect', function() {
+                        socket.send('클라이언트 메세지 테스트');
+                        socket.emit('user', myName);
+                    });
+
+                    socket.on('newMessage', function(data) {
+                         alert('친구가 메세지 던짐.');
+                         window.location.reload(true);
+                    });
+
+                    socket.on('removeSession', function(data) {
+                        alert('Same User were Logon Drop your Seesion.');
+                        window.location.reload(true);
+                        location.href='http://210.118.69.79:3000';
+                    });
+
+                    function send_friend() {
+
+                        socket.emit('send_msg_friend', myName);
+                    }
+
+                    //버튼 이벤트
+                    if (document.addEventListener) {
+                        document.getElementById('send')
+                            .addEventListener('click',send_friend);
+                    } else {
+                        document.getElementById('send')
+                            .attachEvent('onclick', send_friend);
+                        }
+
+                };

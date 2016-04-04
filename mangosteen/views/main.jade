@@ -1,0 +1,252 @@
+!!! 5
+html(xmlns='http://www.w3.org/1999/xhtml', xml:lang='en', lang='en')
+head
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/style_main.css')
+    link(rel='stylesheet', href='/stylesheets/jquery.smartPop.css')
+    script(type='text/javascript', src='http://code.jquery.com/jquery-1.7.min.js')
+    script(type='text/javascript', src='/javascripts/jquery.smartPop.js')
+    script(type='text/javascript', src='/socket.io/socket.io.js')
+
+    script
+
+          $(document).ready(function(){
+              // sm 클래스 바로 하위에 있는 a 태그를 클릭했을때
+              $(".menu>a").click(function(){
+                    var submenu = $(this).next("ul");
+
+                    if( submenu.is(":visible") ){
+                        submenu.slideUp();
+                    }else{
+                        submenu.slideDown();
+                    }
+                });
+          });
+
+    script(type='text/javascript')
+              $(document).ready(function() {
+                var myName = document.getElementById("myName").innerHTML;
+                $('#fri_serach').click(function() {
+                    $.smartPop.open({ background: "gray", width: 500, height: 500, url: "http://210.118.69.79:3000/request"
+                    });
+                });
+
+                $('#fri_invited').click(function() {
+                    $.smartPop.open({ background: "gray", width: 500, height: 500, url: "http://210.118.69.79:3000/accept"
+                    });
+                        $("#"+myName+'_f').hide("fast", function () {
+                         // use callee so don't have to name the function
+                            $(this).prev().hide("fast", arguments.callee);
+                        });
+                });
+              });
+
+    title Mangosteen
+  body
+    #wrap
+      #header
+        h1
+          a(href='http://210.118.69.79:3000/main') Mangosteen DataLink
+      #menu
+        ul
+          li
+            a(href='http://210.118.69.79:3000/main') Mangosteen
+          li
+            a#fri_serach Look Friend
+          li
+             img(src='/images/newicon.png', alt='aaaa', id= email+'_f',hidden='true',class='new_f')
+             a#fri_invited Friend Request
+          li
+            a(href='http://210.118.69.79:3000/login/destroy') Logout
+
+      #contentwrap
+        #content
+          h2 #{my_ID}
+          h2#fri_request Say it! :
+
+                    <div class="expandingText" style="position: relative; ">
+                    <input class="expanding expanding-init" name="msg" id="editMessage" placeholder="Speak bro~" style="position: absolute; height: 100%; resize: none; width: 440px;">
+                    </input><pre class="textareaClone" style="visibility: hidden; border: 1px solid; white-space: pre-wrap; line-height: 19.5px; word-wrap: break-word; padding: 6.5px; margin-top: 6.5px; margin-bottom: 6.5px; box-sizing: border-box; "><div> </div></pre></div>
+                    p
+                    span.button.black
+                        input#send(type='submit', name='submit', value='send it')
+
+          td
+          #column3
+              - each my_user in my_message_
+                  p(id=my_user.UserName + '_u')= my_user.UserName + ' Said ' + my_user.Message
+                   #column3
+                        p(id=my_user.UserName + '_d')= 'MessageDate : ' + my_user.MessageDate
+        #sidebar
+          h2#myName #{email}
+          ul
+                    li(type='none').menu
+                        a
+                            img(src=User_Picture, alt='aaaa')
+                        ul.hide
+                             form(action='/upload', method='post', enctype='multipart/form-data')
+                                    span.button.black
+                                        input#send(type='file', name='imgs')
+                                        input#send(type='submit', value='Upload')
+
+        div(style='clear: both;')
+        #columns
+          #column1
+            h3#fri_request MyFriendMessage
+            ul
+                -if(friend_message.status == 'Failed'){
+                     p
+                         h2
+                            b= "you haven't friend. "
+                 -}else{
+                    - each user in friend_message
+                        #column2
+                            p
+                              li.menu(type='none')
+                                a
+                                    img(src='/images/folder.png', alt='aaaa', id= user.FriendName, hidden='true',class='folder')
+                                ul.hide
+                                  a(href='#' ,id= user.FriendName+'_l')
+                                    li Request Open Server
+
+                              li.menu(type='none')
+                                  a
+                                      img(src='/images/online.png', alt='aaaa', id= user.FriendName + '_o', hidden='true',class='online_pic')
+                                  ul.hide
+                                    a(href='#' + user.FriendName)
+                                      li Send Message
+
+                              li.menu(type='none')
+                                a
+                                  img(src=user.MemberPicture, alt='aaaa', class='fripic')
+
+                              p
+                                h2
+                                    b(id= user.FriendName + '_p', style='position: relative; left: 170px; top: -70px;')= user.FriendName + ' Said ' + user.Message
+                 -}
+
+                 //#target.target Right Click Here
+          div(style='clear: both;')
+      #bottom
+      #footer
+        p
+          | Samsung Software Membership 2012 Mangosteen Project
+
+  script(type='text/javascript')
+                window.onload = function() {
+                    var myName = document.getElementById("myName").innerHTML;
+
+                    var socket = io.connect('http://210.118.69.79:3000', {
+                                'reconnect' : true
+                                , 'resource' : 'socket.io'
+                    });
+
+                    socket.on('connect', function() {
+                        socket.send('클라이언트 메세지 테스트');
+                        socket.emit('user', myName);
+                    });
+
+                    socket.on('current_Friend', function(data) {
+                        //alert('들어오나' + data);
+                        for(var i=0;i<data.length;i++) {
+                            show(data[i] + '_o');
+                        }
+                    });
+
+                    socket.on('current_request', function(data) {
+                        //alert('들어오나' + data);
+                        show(data + '_f');
+                    });
+
+                    socket.on('current_Server', function(data) {
+                        //alert('들어오나' + data[0]);
+                        for(var i=0;i<data.length;i++) {
+                            show(data[i].userId);
+                            $("#"+data[i].userId+'_l').attr("href", "http://" + data[i].username + ":55556/Mangosteen/");
+                        }
+                    });
+
+                    socket.on('new_User_Online', function(data) {
+                        show(data + '_o');
+                    });
+
+                    socket.on('close_Online', function(data) {
+                        hide(data + '_o');
+                    });
+
+                    socket.on('new_My_Message', function(data) {
+
+                        hide(data[0].UserName + '_u');
+                        //hide(data[0].UserName + '_d');
+                        $("#" + data[0].UserName + '_u').html('<b>'+ data[0].UserName + ' Said ' + data[0].Message +'</b>');
+                        $("#" + data[0].UserName + '_d').html('<b>'+ 'MessageDate : ' + data[0].MessageDate +'</b>');
+                        show(data[0].UserName + '_u');
+                        //show(data[0].UserName + '_d');
+                    });
+
+
+                    socket.on('newMessage', function(data) {
+                         //alert('친구가 메세지 던짐. ' + data[0].UserName);
+
+                        var changeText = data[0].UserName + ' Said ' + data[0].Message
+                        hide(data[0].UserName + '_p');
+                        $("#" + data[0].UserName + '_p').html('<b>'+ changeText +'</b>');
+                        show(data[0].UserName + '_p');
+
+                    });
+
+                    socket.on('newRequest', function(data) {
+                         //alert('친구가 메세지 던짐. ' + data[0].UserName);
+
+                        show(myName + '_f');
+                    });
+
+                    socket.on('server open', function(data) {
+                         //alert('확인. ' + data.nick);
+                         show(data.nick);
+                         $("#"+data.nick+'_l').attr("href", "http://"+data.link);
+                    });
+
+                    socket.on('close server', function(data) {
+                         //alert('확인' + data);
+                         hide(data);
+                    });
+
+                    socket.on('removeSession', function(data) {
+                        alert('Same User were Logon Drop your Seesion.');
+                        window.location.reload(true);
+                        location.href='http://210.118.69.79:3000';
+                    });
+
+                    function send_friend() {
+                        var my_message = $("#editMessage").val();
+                        var send_result = [];
+                        send_result.push(myName);
+                        send_result.push(my_message);
+                        socket.emit('send_msg_friend', send_result);
+                        $("#editMessage").val("");
+                    }
+
+                    //버튼 이벤트
+                    if (document.addEventListener) {
+                        document.getElementById('send')
+                            .addEventListener('click',send_friend);
+                    } else {
+                        document.getElementById('send')
+                            .attachEvent('onclick', send_friend);
+                        }
+
+                    //그림 이벤트
+                    function hide(data) {
+                           $("#"+data).hide("fast", function () {
+                             // use callee so don't have to name the function
+                             $(this).prev().hide("fast", arguments.callee);
+                           });
+                    }
+
+                   function show(data) {
+                           //alert('확인. ' + data);
+                           $("#"+data).show(2000);
+                   }
+
+                };

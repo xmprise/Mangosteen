@@ -1,0 +1,102 @@
+!!! 5
+html(xmlns='http://www.w3.org/1999/xhtml')
+    head
+        meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+        link(rel='stylesheet', type='text/css', href='/stylesheets/style_main.css')
+        script(type='text/javascript', src='/socket.io/socket.io.js')
+
+        style(type='text/css')
+              body {
+                background-color: #2C2F2D;
+                font-size: 12px;
+                color: #FFFFFF;
+                text-align: center;
+              }
+              .MangoText {
+                font-size: 72px;
+                color: #36F;
+              }
+              .MangoText {
+                color: #33CCFF;
+              }
+              .MangoText {
+                font-size: 48px;
+              }
+              MangoText {
+                font-size: 40px;
+              }
+              .MangoText .MangoText {
+                font-size: 35px;
+                color: #00CCFF;
+                font-weight: bold;
+              }
+    body
+        p
+          img(src='./images/mangosteen2.png', width='86', height='88')
+          span.MangoText(style='font-size: 72px; color: #B3E1EF; font-weight: bold;')
+            span.MangoText Mangosteen DataLink
+        p  
+        p This page requested to show your friends list.
+        p Accept a friend request by press the accept button.
+        p Click anywhere outside the window If you want to close this page.
+        form#form1(name='form1', method='post', action='')
+             #columns
+                      #column1
+                        h3 Result
+                        ul
+                            -if(friend_invitation.status == 'Failed'){
+                                 p
+                                     h2
+                                        b= "Did not get Invited."
+                             -}else{
+                                - each user in friend_invitation
+                                    p
+                                     li(type='none').menu
+                                        a
+                                          img(src=user.MemberPicture, alt='aaaa')
+                                     p
+                                        h2
+                                            b= user.FriendName + ' : ' + user.Name
+                                            input#hidden_1(type='hidden', name='userN', size='20', value=user.FriendName)
+                                            input#hidden_2(type='hidden', name='userP', value=user.MemberPicture)
+                                            input#hidden_3(type='hidden', name='userU', value=user.Name)
+                                     span.button.black
+                                        input#request(type='submit', name='request', value='Accept', onclick='request_ok()')
+                                     span.button.black
+                                        input#reject(type='submit', name='request', value='Reject', onclick='request_cancel()')
+                             -}
+
+        script
+          function request_ok(){
+            document.form1.action = '/accept';
+            document.form1.submit();
+          }
+
+          function request_cancel(){
+            document.form1.action = '/reject';
+            document.form1.submit();
+          }
+
+        script(language='javascript')
+            window.onload = function() {
+
+                  var socket = io.connect('http://210.118.69.79:3000', {
+                              'reconnect' : true
+                              , 'resource' : 'socket.io'
+                  });
+
+                  socket.on('connect', function() {
+                    socket.send('클라이언트 메세지 테스트');
+
+                  });
+
+                  function fri_request_ok() {
+                      var myName = $("#hidden_1").val();
+                      socket.emit('request_ok', myName);
+                  }
+
+                  if (document.addEventListener) {
+                      document.getElementById('request')
+                          .addEventListener('click',fri_request_ok);
+                  }
+            };
