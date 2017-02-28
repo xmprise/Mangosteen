@@ -1,4 +1,11 @@
-# Mangosteen
-시스템은 크게 안드로이드 웹 서버, 클라이언트(웹 브라우저), 중계 서버, 릴레이 서버, DAL(Data Access Layer) 5가지로 구성된다. 
-안드로이드 웹 서버는 파일공유와 실시간 스트리밍 기능을 제공하며 클라이언트(웹 브라우저)에서는 안드로이드 웹 서버에 저장되어 있는 파일 및 정보들의 목록을 볼 수 있고 다운로드, 업로드가 가능하다. 또한 안드로이드 웹 서버에서 스트리밍하는 동영상 및 음악 파일을 재생할 수 있다.
- 중계 서버에서는 사용자를 관리하고, 사용자간 관계를 맺어 안드로이드 앱 서버로의 접속을 유도하며, 웹 서버 경로상에 NAT 존재 여부와 접속 가능 여부를 판단하는 NAT Check 기능을 제공한다. NAT이 존재한다면 데이터를 중계해서 전달하는 Relay 서버로 접속하여 데이터를 전달한다.
+### Mangosteen
+
+## Creating...
+
+# simple contents
+
+1. System consists of 5 kinds of Android web server, client (web browser), relay server, relay server and DAL (Data Access Layer).
+
+2. The Android web server provides file sharing and live streaming. The client (web browser) can download, upload, and view the list of files and information stored in the Android web server. You can play video and music files streamed from the Android web server.
+
+3. The relay server manages the users, establishes the relationship between the users and induces access to the Android app server, and provides a NAT Check function to determine whether or not there is NAT on the web server path. If there is a NAT, it connects to the relay server which relays the data and delivers the data.
